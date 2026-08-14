@@ -1,0 +1,99 @@
+
+const catData = [
+    {
+        id: 1,
+        name: "Nova",
+        age: "11",
+        color: "Black",
+        breed: "Domestic Shorthair",
+        personality: "Playful and curious",
+        description: "Nova loves chasing toys, climbing cat trees, and greeting everyone who visits the cafe.",
+        image: "",
+        available: true,
+    },
+    {
+        id: 2,
+        name: "Evie",
+        age: "7 years old",
+        color: "",
+        breed: "Domestic Longhair",
+        personality: "Calm and affectionate",
+        description:
+        "Evie is a laid-back girl who loves sunny windows, quiet naps, and plenty of pets.",
+        image: "",
+        available: true,
+    },
+    {
+        id: 3,
+        name: "Binx",
+        age: "5 year",
+        color: "Black & White",
+        breed: "Orange Tabby",
+        personality: "Sweet and Sour",
+        description:
+        "Binx is the definition of a sour patch kid but in the best way. She is passionate about her food then is ready to cuddle",
+        image: "/images/oliver.jpg",
+        available: true,
+    },
+    {
+        id: 4,
+        name: "Cleo",
+        age: "5 years",
+        color: "",
+        breed: "Tuxedo",
+        personality: "Sweet and independent",
+        description:
+        "Cleo enjoys relaxing in cozy spots but will happily come over when she is ready for attention.",
+        image: "",
+        available: false,
+    },
+    {
+        id: 5,
+        name: "Waffles",
+        age: "3 years",
+        color: "orange",
+        breed: "Tabby",
+        personality: "Goofy and outgoing",
+        description:
+        "Waffles is a social butterfly who loves meeting new people and will do just about anything for a treat.",
+        image: "",
+        available: true,
+    },
+    {
+        id: 6,
+        name: "Biscuit",
+        age: "6 years",
+        color: "white",
+        breed: "Domestic Shorthair",
+        personality: "Gentle and cuddly",
+        description:
+        "Biscuit is happiest curled up beside someone and getting chin scratches.",
+        image: "",
+        available: true,
+    },
+    {
+        id: 7,
+        name: "Theo",
+        age: "8 months",
+        color: "",
+        breed: "Domestic Shorthair",
+        personality: "Sweet and independent",
+        description:
+        "Theo is a playful kitten who loves feather toys, cardboard boxes, and making new friends.",
+        image: "",
+        available: false,
+    },
+    {
+        id: 8,
+        name: "Hazel",
+        age: "4 years",
+        color:"",
+        breed: "Tortoiseshell",
+        personality: "Loyal and affectionate",
+        description:
+        "Hazel can be shy at first, but once she trusts you, she will happily follow you everywhere.",
+        image: "",
+        available: false,
+    },
+];
+]
