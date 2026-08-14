@@ -1,5 +1,4 @@
-
-const catData = [
+export const catData = [
     {
         id: 1,
         name: "Nova",
@@ -8,7 +7,7 @@ const catData = [
         breed: "Domestic Shorthair",
         personality: "Playful and curious",
         description: "Nova loves chasing toys, climbing cat trees, and greeting everyone who visits the cafe.",
-        image: "",
+        imageId: "",
         available: true,
     },
     {
@@ -20,7 +19,7 @@ const catData = [
         personality: "Calm and affectionate",
         description:
         "Evie is a laid-back girl who loves sunny windows, quiet naps, and plenty of pets.",
-        image: "",
+        imageId: "",
         available: true,
     },
     {
@@ -32,7 +31,7 @@ const catData = [
         personality: "Sweet and Sour",
         description:
         "Binx is the definition of a sour patch kid but in the best way. She is passionate about her food then is ready to cuddle",
-        image: "/images/oliver.jpg",
+        imageId: "/imageIds/oliver.jpg",
         available: true,
     },
     {
@@ -44,7 +43,7 @@ const catData = [
         personality: "Sweet and independent",
         description:
         "Cleo enjoys relaxing in cozy spots but will happily come over when she is ready for attention.",
-        image: "",
+        imageId: "",
         available: false,
     },
     {
@@ -56,7 +55,7 @@ const catData = [
         personality: "Goofy and outgoing",
         description:
         "Waffles is a social butterfly who loves meeting new people and will do just about anything for a treat.",
-        image: "",
+        imageId: "",
         available: true,
     },
     {
@@ -68,7 +67,7 @@ const catData = [
         personality: "Gentle and cuddly",
         description:
         "Biscuit is happiest curled up beside someone and getting chin scratches.",
-        image: "",
+        imageId: "",
         available: true,
     },
     {
@@ -80,7 +79,7 @@ const catData = [
         personality: "Sweet and independent",
         description:
         "Theo is a playful kitten who loves feather toys, cardboard boxes, and making new friends.",
-        image: "",
+        imageId: "",
         available: false,
     },
     {
@@ -92,8 +91,7 @@ const catData = [
         personality: "Loyal and affectionate",
         description:
         "Hazel can be shy at first, but once she trusts you, she will happily follow you everywhere.",
-        image: "",
+        imageId: "",
         available: false,
     },
 ];
-]

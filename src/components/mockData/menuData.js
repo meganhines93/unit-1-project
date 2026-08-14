@@ -1,0 +1,216 @@
+export const menuData = [
+    // ESPRESSO
+        {
+            id: 1,
+            name: "Espresso",
+            category: "espresso",
+            description: "A rich, smooth double shot of our house espresso.",
+            price: 3.5,
+        },
+        {
+            id: 2,
+            name: "Americano",
+            category: "espresso",
+            description: "House espresso finished with hot water for a smooth, bold cup.",
+            price: 4.0,
+        },
+        {
+            id: 3,
+            name: "Cortado",
+            category: "espresso",
+            description: "Equal parts espresso and steamed milk for a perfectly balanced sip.",
+            price: 4.5,
+        },
+        {
+            id: 4,
+            name: "Cappuccino",
+            category: "espresso",
+            description: "Espresso topped with steamed milk and a thick layer of velvety foam.",
+            price: 4.75,
+        },
+
+  // LATTES
+        {
+            id: 5,
+            name: "Classic Latte",
+            category: "latte",
+            description: "House espresso with creamy steamed milk.",
+            price: 5.0,
+        },
+        {
+            id: 6,
+            name: "Honey Lavender Latte",
+            category: "latte",
+            description: "Espresso, steamed milk, local honey, and a hint of lavender.",
+            price: 5.75,
+        },
+        {
+            id: 7,
+            name: "Brown Sugar Cinnamon Latte",
+            category: "latte",
+            description: "Espresso with brown sugar, cinnamon, and steamed milk.",
+            price: 5.75,
+        },
+        {
+            id: 8,
+            name: "Vanilla Bean Latte",
+            category: "latte",
+            description: "Espresso, steamed milk, and sweet vanilla bean syrup.",
+            price: 5.5,
+        },
+        {
+            id: 9,
+            name: "Salted Caramel Latte",
+            category: "latte",
+            description: "Espresso and steamed milk with buttery caramel and a touch of sea salt.",
+            price: 5.75,
+        },
+
+  // TEA
+        {
+            id: 10,
+            name: "Matcha Latte",
+            category: "tea",
+            description: "Ceremonial matcha whisked with your choice of steamed milk.",
+            price: 5.5,
+        },
+        {
+            id: 11,
+            name: "Chai Latte",
+            category: "tea",
+            description: "Spiced black tea blended with steamed milk and a touch of sweetness.",
+            price: 5.25,
+        },
+        {
+            id: 12,
+            name: "London Fog",
+            category: "tea",
+            description: "Earl Grey tea with vanilla and steamed milk.",
+            price: 5.25,
+        },
+        {
+            id: 13,
+            name: "Peach Green Tea",
+            category: "tea",
+            description: "Refreshing green tea infused with sweet peach.",
+            price: 4.25,
+        },
+        {
+            id: 14,
+            name: "Hibiscus Berry Iced Tea",
+            category: "tea",
+            description: "A bright herbal tea with hibiscus and mixed berry flavors.",
+            price: 4.5,
+        },
+
+  // PASTRIES
+        {
+            id: 15,
+            name: "Butter Croissant",
+            category: "pastries",
+            description: "Flaky, buttery layers baked until perfectly golden.",
+            price: 4.25,
+        },
+        {
+            id: 16,
+            name: "Chocolate Croissant",
+            category: "pastries",
+            description: "Classic buttery croissant filled with rich chocolate.",
+            price: 4.75,
+        },
+        {
+            id: 17,
+            name: "Blueberry Lemon Scone",
+            category: "pastries",
+            description: "Buttery scone packed with blueberries and finished with lemon glaze.",
+            price: 4.5,
+        },
+        {
+            id: 18,
+            name: "Cinnamon Roll",
+            category: "pastries",
+            description: "Soft cinnamon roll topped with vanilla cream cheese icing.",
+            price: 5.0,
+        },
+        {
+            id: 19,
+            name: "Almond Danish",
+            category: "pastries",
+            description: "Flaky pastry filled with sweet almond cream and topped with sliced almonds.",
+            price: 4.75,
+        },
+
+        // BREAKFAST
+        {
+            id: 20,
+            name: "Avocado Toast",
+            category: "breakfast",
+            description: "Sourdough topped with smashed avocado, chili flakes, and everything seasoning.",
+            price: 9.5,
+        },
+        {
+            id: 21,
+            name: "Breakfast Croissant",
+            category: "breakfast",
+            description: "Buttery croissant with egg, cheddar, and your choice of bacon or sausage.",
+            price: 8.5,
+        },
+        {
+            id: 22,
+            name: "The Daily Purr Breakfast",
+            category: "breakfast",
+            description: "Two eggs, crispy breakfast potatoes, sourdough toast, and your choice of bacon or sausage.",
+            price: 12.5,
+        },
+        {
+            id: 23,
+            name: "Berry Yogurt Parfait",
+            category: "breakfast",
+            description: "Vanilla Greek yogurt layered with seasonal berries, granola, and honey.",
+            price: 7.5,
+        },
+        {
+            id: 24,
+            name: "Bacon & Egg Biscuit",
+            category: "breakfast",
+            description: "Fluffy biscuit with egg, crispy bacon, cheddar, and house-made aioli.",
+            price: 8.75,
+        },
+
+  // LUNCH
+        {
+            id: 25,
+            name: "Turkey Pesto Panini",
+            category: "lunch",
+            description: "Roasted turkey, mozzarella, tomato, and basil pesto pressed on ciabatta.",
+            price: 11.5,
+        },
+        {
+            id: 26,
+            name: "Caprese Sandwich",
+            category: "lunch",
+            description: "Fresh mozzarella, tomato, basil, pesto, and balsamic glaze on ciabatta.",
+            price: 10.5,
+        },
+        {
+            id: 27,
+            name: "Chicken Caesar Wrap",
+            category: "lunch",
+            description: "Grilled chicken, romaine, parmesan, and Caesar dressing wrapped in a flour tortilla.",
+            price: 11.0,
+        },
+        {
+            id: 28,
+            name: "Grilled Cheese & Tomato Soup",
+            category: "lunch",
+            description: "Golden sourdough grilled cheese served with a cup of creamy tomato soup.",
+            price: 10.5,
+        },
+        {
+            id: 29,
+            name: "The Cat Nap Club",
+            category: "lunch",
+            description: "Turkey, bacon, cheddar, lettuce, tomato, and herb mayo stacked on toasted sourdough.",
+            price: 12.0,
+        },
+    ];
