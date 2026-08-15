@@ -8,7 +8,7 @@ const Header = () => {
                 <h2>Cat Cafe</h2>
             </div>
         </header>
-    )
-};
+    );
+}
 
 export default Header;

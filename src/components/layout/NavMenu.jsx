@@ -26,7 +26,7 @@ const NavMenu = () => {
                 </li>
             </ul>
         </nav>
-    )
-};
+    );
+}
 
 export default NavMenu;
