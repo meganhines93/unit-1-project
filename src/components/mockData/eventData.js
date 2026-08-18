@@ -8,7 +8,7 @@ export const eventData = [
         price: 12,
         spots: 15,
         category: "Social",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/1.png",
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ export const eventData = [
         price: 20,
         spots: 12,
         category: "Wellness",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/2.png",
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ export const eventData = [
         price: 30,
         spots: 16,
         category: "Arts & Crafts",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/3.png",
     },
     {
         id: 4,
@@ -41,7 +41,7 @@ export const eventData = [
         price: 10,
         spots: 24,
         category: "Social",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/4.png",
     },
     {
         id: 5,
@@ -52,7 +52,7 @@ export const eventData = [
         price: "Free",
         spots: 30,
         category: "Adoption",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/5.png",
     },
     {
         id: 6,
@@ -63,7 +63,7 @@ export const eventData = [
         price: 8,
         spots: 15,
         category: "Arts & Crafts",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/6.png",
     },
     {
         id: 7,
@@ -74,7 +74,7 @@ export const eventData = [
         price: 10,
         spots: 20,
         category: "Special Event",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/7.png",
     },
     {
         id: 8,
@@ -85,7 +85,7 @@ export const eventData = [
         price: 18,
         spots: 18,
         category: "Seasonal",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/8.png",
     },
     {
         id: 9,
@@ -96,7 +96,7 @@ export const eventData = [
         price: 15,
         spots: 25,
         category: "Seasonal",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/9.png",
     },
     {
         id: 10,
@@ -107,7 +107,7 @@ export const eventData = [
         price: 8,
         spots: 15,
         category: "Social",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/10.png",
     },
     {
         id: 11,
@@ -118,7 +118,7 @@ export const eventData = [
         price: 22,
         spots: 16,
         category: "Arts & Crafts",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/11.png",
     },
     {
         id: 12,
@@ -129,7 +129,7 @@ export const eventData = [
         price: 18,
         spots: 20,
         category: "Seasonal",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/12.png",
     },
     {
         id: 13,
@@ -140,7 +140,7 @@ export const eventData = [
         price: "Free",
         spots: 30,
         category: "Special Event",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/13.png",
     },
     {
         id: 14,
@@ -151,7 +151,7 @@ export const eventData = [
         price: 30,
         spots: 15,
         category: "Arts & Crafts",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/14.png",
     },
     {
         id: 15,
@@ -162,7 +162,7 @@ export const eventData = [
         price: 18,
         spots: 20,
         category: "Seasonal",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/15.png",
     },
     {
         id: 16,
@@ -173,7 +173,7 @@ export const eventData = [
         price: 10,
         spots: 25,
         category: "Seasonal",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/16.png",
     },
     {
         id: 17,
@@ -184,7 +184,7 @@ export const eventData = [
         price: 15,
         spots: 20,
         category: "Social",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/17.png",
     },
     {
         id: 18,
@@ -195,7 +195,7 @@ export const eventData = [
         price: 22,
         spots: 25,
         category: "Special Event",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/18.png",
     },
     {
         id: 19,
@@ -206,7 +206,7 @@ export const eventData = [
         price: 20,
         spots: 12,
         category: "Wellness",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/19.png",
     },
     {
         id: 20,
@@ -217,39 +217,6 @@ export const eventData = [
         price: 20,
         spots: 18,
         category: "Arts & Crafts",
-        imageId: "",
-    },
-    {
-        id: 21,
-        title: "Coffee & Cat Crochet Club",
-        date: "Jan. 16, 2027",
-        time: "10:00 AM-12:00 PM",
-        description: "Bring your crochet or knitting project for a cozy morning of crafting, coffee, and cats.",
-        price: 8,
-        spots: 15,
-        category: "Arts & Crafts",
-        imageId: "",
-    },
-    {
-        id: 22,
-        title: "Speed Dating: Cat Edition",
-        date: "Jan. 23, 2027",
-        time: "6:00-8:00 PM",
-        description: "Looking for your perfect match? Spend a few minutes with each adoptable cat to discover which personality fits yours best.",
-        price: 10,
-        spots: 20,
-        category: "Adoption",
-        imageId: "",
-    },
-    {
-        id: 23,
-        title: "Cozy Mystery Book Club",
-        date: "Jan. 30, 2027",
-        time: "10:00 AM-12:00 PM",
-        description: "Discuss the month's cozy mystery pick over coffee with plenty of feline company.",
-        price: 8,
-        spots: 15,
-        category: "Social",
-        imageId: "",
+        imageId: "https://ik.imagekit.io/bbk3azqkom/20.png",
     },
 ]

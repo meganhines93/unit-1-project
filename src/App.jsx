@@ -6,22 +6,14 @@ import Footer from './components/layout/Footer'
 import Cats from './components/pages/MeetTheCats'
 import Menu from './components/pages/CafeMenu'
 import Events from './components/pages/CafeEvents'
-import MeetTheCats from './components/pages/MeetTheCats';
+import MeetTheCats from './components/pages/MeetTheCats'
 import './App.css'
 
 function App() {
 
   return (
     <>
-    <Header />
-      
-      <nav>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/cats">Meet The Cats</Link></li>
-            <li><Link to="/menu">Menu</Link></li>
-            <li><Link to="/events">Events</Link></li>
-      </nav>
-     
+    <Header />     
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cats" element={<MeetTheCats />} />

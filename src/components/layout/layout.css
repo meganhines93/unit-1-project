@@ -1,0 +1,50 @@
+/* HEADER */
+
+.header {
+    top: 0;
+    width: 100%;
+    background-color: #7F9273;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.the-daily-purr-logo {
+    width: 275px;
+    height: auto;
+}
+
+/* NAVIGATION */
+.nav-menu {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #43302e;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-menu a:hover {
+    color: white;
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    background-color: #4A3028;
+    color: white;
+}
+

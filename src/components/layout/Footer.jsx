@@ -1,9 +1,11 @@
 
 const Footer = () => {
     return(
-        <footer>
+        <footer className='footer'>
                 <section className='newsletter-signup'>
-                        <h4> Sign up for Newsletter</h4>
+                        <h4>Stay in the Loop</h4>
+                        <h3>Join our mailing list for updates on events, new cats, and specials!</h3>
+                        
                 </section>
 
                 <section className='hours-of-operation'>

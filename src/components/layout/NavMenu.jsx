@@ -1,28 +1,20 @@
-import { Link } from "react-router";
+import { Link } from 'react-router';
 
 const NavMenu = () => {
-    return(
+    return (
         <nav>
-            <ul className ="nav-menu">
+            <ul className="nav-menu">
                 <li>
-                    <Link className="link" to="/">
-                        Home
-                    </Link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link className="link" to="/meetthecats">
-                        Meet the Cats
-                    </Link>
+                    <Link to="/cats">Meet The Cats</Link>
                 </li>
                 <li>
-                    <Link className="link" to="/menu">
-                        Menu
-                    </Link>
+                    <Link to="/menu">Menu</Link>
                 </li>
                 <li>
-                    <Link className="link" to="/events">
-                        Events
-                    </Link>
+                    <Link to="/events">Events</Link>
                 </li>
             </ul>
         </nav>
