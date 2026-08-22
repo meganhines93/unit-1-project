@@ -55,7 +55,7 @@ const AdoptionForm = ({ handleCloseForm }) => {
             data.firstName.trim() !== '' &&
             data.lastName.trim() !== '' &&
             data.emailAddress.trim() !== '' &&
-            Number(data.phoneNumber) <= 10 &&
+            data.phoneNumber.trim() !== '' &&
             data.streetAddress.trim() !== '' &&
             data.city.trim() !== '' &&
             data.state.trim() !== '' &&
@@ -118,7 +118,7 @@ const AdoptionForm = ({ handleCloseForm }) => {
                     <Input 
                         id="lastName"
                         type="text"
-                        value={data.firstName}
+                        value={data.lastName}
                         handleChange={handleDataChange}
                     />
                     <InputErrorMessage
@@ -176,6 +176,23 @@ const AdoptionForm = ({ handleCloseForm }) => {
                     <InputErrorMessage
                         hasError={hasErrors && data.streetAddress === ''}
                         msg={errorMessages['streetAddressRequired']}
+                    />
+                </FormItem>
+
+                <Spacer marginY="20px" />
+
+                <FormItem classes="city-item">
+                    <label htmlFor="city">City</label>
+                    <p></p>
+                    <Input 
+                        id="city"
+                        type="text"
+                        value={data.city}
+                        handleChange={handleDataChange}
+                    />
+                    <InputErrorMessage
+                        hasError={hasErrors && data.city === ''}
+                        msg={errorMessages['cityRequired']}
                     />
                 </FormItem>
 
@@ -435,7 +452,7 @@ const AdoptionForm = ({ handleCloseForm }) => {
                         value={data.additionalComments}
                         onChange={handleDataChange}
                         rows="5"
-                        required={true}
+                        required={false}
                     />
                 </FormItem>
                 

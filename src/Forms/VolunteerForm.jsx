@@ -233,7 +233,7 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
                     <label htmlFor="zipCode">Zip Code</label>
                     <p></p>
                     <Input 
-                        id="zipcode"
+                        id="zipCode"
                         type="text"
                         value={data.zipCode}
                         handleChange={handleDataChange}
@@ -247,7 +247,7 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
 
                 <Spacer marginY="20px" />
 
-                <section classname="availability-section">
+                <section className="availability-section">
                 <h2>AVAILABILITY</h2>
 
                 <FormItem classes="days-available-item">
