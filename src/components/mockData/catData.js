@@ -10,6 +10,8 @@ export const catData = [
             "Nova is playful, curious, and always ready to explore. She loves chasing toys, climbing cat trees, and greeting everyone who visits the cafe.",
         imageId: "https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2004_26_12%20PM.png",
         available: true,
+        gender: "Female",
+        adoptionFee: 60,
     },
     {
         id: 2,
@@ -22,6 +24,8 @@ export const catData = [
             "Evie is a laid-back girl who loves relaxing in sunny windows, being brushed, and enjoying a little catnip. She is happiest when she can curl up somewhere cozy.",
         imageId: "https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2004_26_46%20PM.png",
         available: true,
+        gender: "Female",
+        adoptionFee: 60,
     },
     {
         id: 3,
@@ -34,6 +38,8 @@ export const catData = [
             "Binx is the definition of a Sour Patch Kid, but in the best way. She is very passionate about her food, has plenty of personality, and is always ready to cuddle when the mood strikes.",
         imageId: "https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2004_28_25%20PM.png",
         available: true,
+        gender: "Female",
+        adoptionFee: 60,
     },
     {
         id: 4,
@@ -46,6 +52,8 @@ export const catData = [
             "Cleo enjoys relaxing in cozy spots and doing her own thing, but when she is ready for attention, she will happily come over for pets and affection.",
         imageId: "https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2004_29_23%20PM.png",
         available: false,
+        gender: "Female",
+        adoptionFee: 60,
     },
     {
         id: 5,
@@ -58,6 +66,8 @@ export const catData = [
             "Waffles is a goofy social butterfly who loves meeting new people. He is always ready to play and will do just about anything for a treat.",
         imageId: "https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2004_30_31%20PM.png",
         available: true,
+        gender: "Male",
+        adoptionFee: 60,
     },
     {
         id: 6,
@@ -70,6 +80,8 @@ export const catData = [
             "Biscuit is a gentle sweetheart who is happiest curled up beside someone. He loves chin scratches, quiet afternoons, and finding the coziest seat in the cafe.",
         imageId: "https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2004_31_33%20PM.png",
         available: true,
+        gender: "Male",
+        adoptionFee: 60,
     },
     {
         id: 7,
@@ -82,6 +94,8 @@ export const catData = [
             "Theo is a playful kitten who loves feather toys, cardboard boxes, and making new friends. His curious personality keeps him busy exploring everything around him.",
         imageId: "https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2004_33_47%20PM.png",
         available: false,
+        gender: "Male",
+        adoptionFee: 100,
     },
     {
         id: 8,
@@ -94,5 +108,7 @@ export const catData = [
             "Hazel can be a little shy when she first meets someone, but once she trusts you, she becomes an affectionate companion who will happily follow you everywhere.",
         imageId: "https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2004_34_53%20PM.png",
         available: false,
+        gender: "Female",
+        adoptionFee: 60,
     },
 ];

@@ -1,11 +1,21 @@
-import React from 'react';
+import { useState } from "react";
 import { Link } from "react-router";
+import Button from './../../forms/input/Button.jsx';
 import Spacer from '../../common/Spacer.jsx';
 import VolunteerForm from '../../forms/VolunteerForm.jsx'
-
+ 
 const HomePage = ({home}) => {
+    const [ openForm, setOpenForm ] = useState(false);
+    const [ showSuccess, setShowSuccess ] = useState(false);
+
+    const handleToggleForm = () => {
+        setOpenForm(prevOpenForm => !prevOpenForm);
+    }; 
+
     return(
             <main className='home-page'>
+
+
                 <section className='about-section'>
                     <img
                     className="about-image"
@@ -29,14 +39,10 @@ const HomePage = ({home}) => {
                         </div>
                 </section>
 
+
                 <section className='book-a-visit'>
-                    <img
-                    className="book-a-visit-image"
-                    src="https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2001_24_25%20PM.png"
-                    alt="The Daily Purr Cat Cafe Lounge"
-                    />
-                    <div className="visit-content"></div>
-                    <h3>Book a Visit</h3>
+                    <div className="visit-content">
+                        <h2>Book a Visit</h2>
                             <p>
                                 Ready for some quality cat time?
                             </p>
@@ -49,7 +55,15 @@ const HomePage = ({home}) => {
                             <p>
                                 Book Your Visit
                             </p>
+                    </div>
+                    <img
+                    className="book-a-visit-image"
+                    src="https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2001_24_25%20PM.png"
+                    alt="The Daily Purr Cat Cafe Lounge"
+                    />
+                    
                 </section>
+
 
                 <section className='sponsor-ad'>
                     <img
@@ -73,15 +87,64 @@ const HomePage = ({home}) => {
                             </p>
                 </section>
 
+
+
                 <section className='volunteer-form'>
                     <img
                     className="volunteer-image"
                     src="https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2001_30_07%20PM.png"
                     alt="The Daily Purr Cat Cafe Lounge"
                     />
-                    <div className="volunteer-content"></div>
-                    <h3>Volunteer Form</h3>
-                    <VolunteerForm />
+                    <div className="why-volunteer-box">
+                        <h3>Why Volunteer?</h3>
+                        <ul>
+                            <li>
+                                Help care for cats and support adoptions
+                            </li>
+                            <li>
+                                Create a welcoming experience for visitors
+                            </li>
+                            <li>
+                                Be part of a kind, passionate community
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="ways-to-help-box">
+                        <h3>Ways You Can Help</h3>
+                        <ul>
+                            <li>
+                                Cat Care & Enrichment
+                            </li>
+                            <li>
+                                Cafe Support
+                            </li>
+                            <li>
+                                Events & Outreach
+                            </li>
+                            <li>
+                                Admin & Social Media
+                            </li>
+                        </ul>
+                        <Spacer marginY="20px" />
+                    </div>
+                    {openForm ? (
+                        <VolunteerForm 
+                            handleCloseForm={handleToggleForm}
+                            setShowSuccess={setShowSuccess}
+                        />
+                    ) : (
+                        <div className="volunteer-form-button-container">
+                            <Button 
+                                id={`volunteer-form`}
+                                type="button"
+                                label="Become a Volunteer"
+                                handleClick={handleToggleForm}
+                            />
+                            <Spacer marginY="20px" />
+                        </div>
+                    )}
+                                     
                 </section>
         </main>
     );

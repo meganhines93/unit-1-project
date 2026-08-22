@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Button from '../../forms/input/Button.jsx';
-import EventRegistrationForm from '../../forms/EventRegistrationForm.jsx';
-import Spacer from '../../common/Spacer.jsx';
+import Button from '../../../forms/input/Button.jsx';
+import EventRegistrationForm from '../../../forms/EventRegistrationForm.jsx';
+import Spacer from '../../../common/Spacer.jsx';
 
 
 const EventCard = ({ event }) => {
@@ -23,7 +23,7 @@ const EventCard = ({ event }) => {
                 <h4 className="event-card-date-and-time">{event.date} {event.time}</h4>
                 <p>{event.description}</p>
                 <Spacer marginY="20px" />
-            </div>
+            </div> 
                     <div className="price">Price ${event.price}</div>
                     <Spacer marginY="20px" />
                 <div className="category">Category: {event.category}</div>

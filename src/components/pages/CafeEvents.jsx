@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 import Header from '../layout/Header.jsx';
 import Footer from '../layout/Footer.jsx';
 import GoBack from '../../common/GoBack.jsx';
-import EventCard from './EventCard.jsx';
+import EventCard from './Cards/EventCard.jsx';
 import { eventData } from '../mockData/eventData.js';
 
 const CafeEvents = ({ isLoading, events = [], eventsError }) => {
@@ -31,7 +31,7 @@ const CafeEvents = ({ isLoading, events = [], eventsError }) => {
             );
         });
 
-        return (
+        return ( 
             <main className="events-page">
                 <h1 className="events-header">UPCOMING EVENTS</h1>
                 {eventData.length ? (

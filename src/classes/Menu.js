@@ -8,7 +8,7 @@ export default class Menu {
         this.imageId = this.imageId;
     }
         getImageURL = () => {
-                return '/* NEED TO ADD IMAGE URL */' + this.imageId;
+                return 'https://i.ibb.co/' + this.imageId;
         };
 }
 
