@@ -1,0 +1,21 @@
+@import url('./components/layout/layout.css');
+@import url('./components/pages/pages.css');
+@import url('./forms/forms.css');
+
+* {
+    box-sizing: border-box;
+}
+ html, body {
+    margin: 0;
+    padding: 0;
+ }
+
+ .home-page {
+    background-color: #F7F2E9;
+    padding-top: 20px;
+}
+
+
+main {
+    padding: 0 20px;
+}

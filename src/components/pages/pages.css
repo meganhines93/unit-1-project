@@ -1,0 +1,344 @@
+/* ABOUT SECTION */
+            .about-section {
+                background-color: #263238;
+                color: white;
+                padding: 40px;
+                margin-bottom: 25px;
+                margin-top: 20px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                gap: 50px;
+            }
+
+
+            .about-image {
+                width: 40%;
+                max-width: 500px;
+                border-radius: 10px;
+            }
+
+
+            .about-content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+
+            .about-content h2 {
+                margin-top: 0;
+            }
+
+
+            .about-content p {
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+
+/* BOOK A VISIT SECTION */
+            .book-a-visit {
+                background-color: #263238;
+                color: white;
+                padding: 40px;
+                margin-bottom: 25px;
+                margin-top: 20px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                gap: 50px;
+            }
+
+
+
+            .book-a-visit-image {
+                width: 40%;
+                max-width: 500px;
+                border-radius: 10px;
+            }
+
+            .book-a-visit-content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+
+/* MEET OUR RESCUE PARTNER SECTION */
+            .sponsor-ad {
+                background-color: #263238;
+                color: white;
+                padding: 20px;
+                margin-bottom: 25px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sponser-image {
+                width: 40%;
+                max-width: 500px;
+                border-radius: 10px;
+            }
+
+/* VOLUNTEER FORM SECTION */
+            .volunteer-form {
+                background-color: #263238;
+                color: white;
+                padding: 20px;
+                margin-bottom: 25px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .volunteer-image {
+                width: 40%;
+                max-width: 500px;
+                border-radius: 10px;
+            }
+
+
+
+
+
+/* CAT PAGE */
+
+            .meet-the-cats-page {
+                background-color: #F7F2E9;
+                padding: 30px 20px;
+            } 
+
+            .meet-the-cats-header{
+                color: black;
+            }
+
+            /* CAT CARDS */
+
+            .cat-header{
+                color: black;
+                text-align: center;
+            } 
+
+            .cat-card-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 25px;
+                list-style: none;
+                margin: 20px 0 0;
+                padding: 0;
+            }
+
+            .cat-card-item {
+                list-style: none;
+                background-color: pink;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+
+            .cat-card {
+                background-color: pink;
+                color: white;
+                height: 100%;
+            }
+
+            .cat-card-image {
+                width: 100%;
+                display: block;
+            } 
+
+
+            .cat-card-content {
+                padding: 20px;
+            } 
+
+
+            .cat-card-name {
+                color: #c66311;
+                font-size: 1.1rem;
+                font-weight: 700;
+                text-transform: uppercase;
+            } 
+            
+            .cat-card-personality {
+                color: white;
+                font-size: 1.1rem;
+                font-weight: 700;
+                text-transform: uppercase;
+            } 
+
+/* CAT DETAILS PAGE */
+            .cat-card-image {
+                width: 500px;
+            }
+
+            .cat-details-section {
+                background-color: #263238;
+                color: white;
+                padding: 40px;
+                margin-bottom: 25px;
+                margin-top: 20px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                gap: 50px;
+            }
+
+            .cat-details-image {
+                width: 40%;
+                max-width: 500px;
+                border-radius: 10px;
+            }
+
+            .cat-details-content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            
+  
+
+/* EVENTS PAGE */
+
+            .events-page {
+                background-color: #F7F2E9;
+                padding: 30px 20px;
+            }
+
+/* EVENT HEADER */
+            .events-header{
+                color: black;
+                text-align: center;
+            }
+
+
+/* EVENT CARDS */
+
+            .event-card-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 25px;
+                list-style: none;
+                margin: 20px 0 0;
+                padding: 0;
+            }
+
+
+            .event-card-item {
+                list-style: none;
+                background-color: #263238;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+
+            .event-card {
+                background-color: #263238;
+                color: white;
+                height: 100%;
+            }
+
+
+            .event-card-image {
+                width: 100%;
+                display: block;
+            }
+
+
+            .event-card-content {
+                padding: 20px;
+            }
+
+
+            .event-card-title {
+                color: #c66311;
+                font-size: 1.1rem;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+
+            .event-card-subtitle,
+            .event-card-bio-heading,
+            .event-registration-event-title {
+                color: white;
+                font-size: 1rem;
+                font-weight: 600;
+                text-transform: none;
+            }
+
+
+
+
+
+
+
+/* MENU PAGE */
+            .menu-page {
+                background-color: #F7F2E9;
+                padding: 30px 20px;
+            }
+
+/* MENU CARD */
+            .menu-header{
+                color: black;
+                text-align: center;
+            }
+
+            .menu-card-image {
+                width: 40%;
+                max-width: 500px;
+                border-radius: 10px;
+            }
+
+            .menu-card-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 25px;
+                list-style: none;
+                margin: 20px 0 0;
+                padding: 0;
+            }
+
+
+            .menu-card-item {
+                list-style: none;
+                background-color: #263238;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+
+            .menu-card {
+                background-color: #263238;
+                color: white;
+                height: 100%;
+            }
+
+
+            .menu-card-image {
+                width: 100%;
+                display: block;
+            }
+
+
+            .menu-card-content {
+                padding: 20px;
+            }
+
+
+            .menu-card-title {
+                color: #c66311;
+                font-size: 1.1rem;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
