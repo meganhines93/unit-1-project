@@ -34,6 +34,7 @@ const CafeEvents = ({ isLoading, events = [], eventsError }) => {
         return ( 
             <main className="events-page">
                 <h1 className="events-header">UPCOMING EVENTS</h1>
+                <p className="events-subtitle">Join us for coffee, cats, and community events ath The Daily Purr</p>
                 {eventData.length ? (
                     <div className="event-card-container">{eventsJSX}</div>
                 ) : (

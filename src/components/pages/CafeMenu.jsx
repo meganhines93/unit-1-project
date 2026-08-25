@@ -34,18 +34,18 @@ const CafeMenu = ({ isLoading, menuError }) => {
         return (
             <main className="menu-page">
                 <h1 className="menu-header">MENU</h1>
-                <h3>Good coffee, cozy bites & plenty of purrs</h3>
+                <p className="menu-subtitle">Good coffee, cozy bites & plenty of purrs</p>
 
                 <div className="menu-category-buttons">
                     <button onClick={() => setSelectedCategory("Espresso")}>Espresso</button>
                     <button onClick={() => setSelectedCategory("Latte")}>Latte</button>
                     <button onClick={() => setSelectedCategory("Tea")}>Tea</button>
-                    <button onClick={() => setSelectedCategory("Pasteries")}>Pasteries</button>
+                    <button onClick={() => setSelectedCategory("Pastries")}>Pastries</button>
                     <button onClick={() => setSelectedCategory("Breakfast")}>Breakfast</button>
                     <button onClick={() => setSelectedCategory("Lunch")}>Lunch</button>
                 </div>
 
-                <h2 className="menu-h2">{selectedCategory}</h2>
+                <h2 className="menu-title">{selectedCategory}</h2>
 
                 {filteredMenu.length ? (
                     <div className="menu-card-container">

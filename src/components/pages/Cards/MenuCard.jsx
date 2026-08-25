@@ -17,9 +17,8 @@ const MenuCard = ({ menu }) => {
             />
             <div className="menu-card-content">
                 <h3 className="menu-card-name">{menu.name}</h3>
-                <h4 className="menu-card-description">{menu.description}</h4>
-                <h5 className="menu-card-price">Price: ${menu.price}</h5>
-                <h5 className="menu-card-available">{menu.available}</h5>
+                <p className="menu-card-description">{menu.description}</p>
+                <p className="menu-card-price">Price: ${menu.price}</p>
             </div>
         </div>
     );

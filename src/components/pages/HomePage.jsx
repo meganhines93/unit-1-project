@@ -107,25 +107,25 @@ const HomePage = ({ home }) => {
 
 
                 <section className='volunteer-form'>
-                    <div className="volunteer-content">
-                        <div className="volunteer-info-container">
+                    <div className="volunteer-top-section">
+                        <div className="volunteer-content">
+                            <div className="volunteer-info-container">
                             
-                            <div className="why-volunteer-box">
-                                <h3>Why Volunteer?</h3>
-                                <ul>
-                                    <li>
-                                        Help care for cats and support adoptions
-                                    </li>
-                                    <li>
-                                        Create a welcoming experience for visitors
-                                    </li>
-                                    <li>
-                                        Be part of a kind, passionate community
-                                    </li>
-                                </ul>
-                            </div>
-                    
-
+                                <div className="why-volunteer-box">
+                                    <h3>Why Volunteer?</h3>
+                                    <ul>
+                                        <li>
+                                            Help care for cats and support adoptions
+                                        </li>
+                                        <li>
+                                            Create a welcoming experience for visitors
+                                        </li>
+                                        <li>
+                                            Be part of a kind, passionate community
+                                        </li>
+                                    </ul>
+                                </div>
+                
                             <div className="ways-to-help-box">
                                 <h3>Ways You Can Help</h3>
                                 <ul>
@@ -142,32 +142,39 @@ const HomePage = ({ home }) => {
                                         Admin & Social Media
                                     </li>
                                 </ul>
-                                <Spacer marginY="20px" />
                             </div>
                         </div>
-                            
-                            {openForm ? (
-                                <VolunteerForm 
-                                    handleCloseForm={handleToggleForm}
-                                    setShowSuccess={setShowSuccess}
-                                />
-                            ) : (
-                                <div className="volunteer-form-button-container">
-                                    <Button 
-                                        id={`volunteer-form`}
-                                        type="button"
-                                        label="Become a Volunteer"
-                                        handleClick={handleToggleForm}
-                                    />
-                                    <Spacer marginY="20px" />
-                                </div>
-                            )}
+                        
+                        <div className="volunteer-form-button-container">
+                            <Button
+                                id="volunteer-form"
+                                type="button"
+                                label={openForm ? "Close Application" : "Become a Volunteer"}
+                                handleClick={handleToggleForm}
+                            />
                         </div>
+                    </div>
                         <img
                         className="volunteer-image"
                         src="https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2001_30_07%20PM.png"
                         alt="The Daily Purr Cat Cafe Lounge"
-                        />          
+                        />  
+                    </div>
+
+                    {showSuccess && (
+                        <div className="success-banner">
+                            Success! Your volunteer form was sent.
+                        </div>
+                    )}       
+
+                    {openForm && (
+                        <div className="volunteer-form-wrapper">
+                            <VolunteerForm
+                                handleCloseForm={handleToggleForm}
+                                setShowSuccess={setShowSuccess}
+                            />
+                        </div>
+                    )}
                 </section>
         </main>
     );

@@ -22,7 +22,7 @@ const errorMessages = {
     numberOfGuestsRequired: 'At least 1 guest required.'
 };
 
-const EventRegistrationForm = ({ event, handleCloseForm }) => {
+const EventRegistrationForm = ({ event, handleCloseForm, setShowSuccess }) => {
     const [data, setData] = useState({ ...initialData, eventId: event.id });
     const [hasErrors, setHasErrors] = useState(false);
 
@@ -49,6 +49,7 @@ const EventRegistrationForm = ({ event, handleCloseForm }) => {
         if (!isValid()) {
             setHasErrors(true);
         } else {
+            setShowSuccess(true);
             handleCloseForm();
         }
     };
@@ -136,6 +137,7 @@ const EventRegistrationForm = ({ event, handleCloseForm }) => {
                     />
                 </FormItem>
 
+            <div className="registration-button-container">
                 <Button
                     id={`cancel-event-${event.id}`}
                     type="button"
@@ -150,6 +152,7 @@ const EventRegistrationForm = ({ event, handleCloseForm }) => {
                     label="Reserve"
                     classes="submit-register-button"
                 />
+            </div>
             </form>
         </>
     );

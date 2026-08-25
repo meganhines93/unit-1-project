@@ -109,10 +109,10 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
 
             <form className="volunteer-form-grid" onSubmit={handleSubmit}>
                 <h2>PERSONAL INFORMATION</h2>
+
                 <section className='personal-information-section'>
                 <FormItem classes="first-name-item">
                     <label htmlFor="firstname">First Name</label>
-                    <p></p>
                     <Input 
                         id="firstName"
                         type="text"
@@ -125,11 +125,8 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
                     />
                 </FormItem>
 
-                <Spacer marginY="20px" />
-
                 <FormItem classes="last-name-item">
                     <label htmlFor="lastName">Last Name</label>
-                    <p></p>
                     <Input 
                         id="lastName"
                         type="text"
@@ -142,11 +139,8 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
                     />
                 </FormItem>
 
-                <Spacer marginY="20px" />
-
                 <FormItem classes="email-address-item">
                     <label htmlFor="emailAddress">Email Address</label>
-                    <p></p>
                     <Input 
                         id="emailAddress"
                         type="email"
@@ -159,11 +153,8 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
                     />
                 </FormItem>
 
-                <Spacer marginY="20px" />
-
                 <FormItem classes="phone-number-item">
                     <label htmlFor="phoneNumber">Phone Number</label>
-                    <p></p>
                     <Input 
                         id="phoneNumber"
                         type="text"
@@ -176,11 +167,8 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
                     />
                 </FormItem>
 
-                <Spacer marginY="20px" />
-
                 <FormItem classes="street-address-item">
                     <label htmlFor="streetAddress">Street Address</label>
-                    <p></p>
                     <Input 
                         id="streetAddress"
                         type="text"
@@ -193,11 +181,8 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
                     />
                 </FormItem>
 
-                <Spacer marginY="20px" />
-
                 <FormItem classes="city-item">
                     <label htmlFor="city">City</label>
-                    <p></p>
                     <Input 
                         id="city"
                         type="text"
@@ -210,11 +195,8 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
                     />
                 </FormItem>
 
-                <Spacer marginY="20px" />
-
                 <FormItem classes="state-item">
                     <label htmlFor="state">State</label>
-                    <p></p>
                     <Input 
                         id="state" 
                         type="text"
@@ -227,11 +209,8 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
                     />
                 </FormItem>
 
-                <Spacer marginY="20px" />
-
                 <FormItem classes="zip-code-item">
                     <label htmlFor="zipCode">Zip Code</label>
-                    <p></p>
                     <Input 
                         id="zipCode"
                         type="text"
@@ -244,8 +223,6 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
                     />
                 </FormItem>
                 </section>
-
-                <Spacer marginY="20px" />
 
                 <section className="availability-section">
                 <h2>AVAILABILITY</h2>
@@ -329,8 +306,6 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
                     />
                 </FormItem>
 
-                <Spacer marginY="20px" />
-
                 <FormItem classes="time-available-item">
                     <label htmlFor="timeAvailable">What time(s) are you generally available?</label>
                     <p></p>
@@ -346,7 +321,6 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
                     />
                 </FormItem>
                 </section>
-                <Spacer marginY="20px" />
 
                 <section className="tell-us-about-you">
                 <h2>TELL US ABOUT YOU</h2>
@@ -375,7 +349,6 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
                     />
                 </FormItem>
                 </section>
-                <Spacer marginY="20px" />
 
                 <Button
                     id="submit-volunteer-request"
