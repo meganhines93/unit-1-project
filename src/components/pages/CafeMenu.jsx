@@ -14,7 +14,7 @@ const CafeMenu = ({ isLoading, menuError }) => {
     const [selectedCategory, setSelectedCategory] = useState("Espresso");
 
     const filteredMenu = menuData.filter(
-        (item) => item.category === setSelectedCategory
+        (item) => item.category === selectedCategory
     );
 
     const handleGoToHomePage = () => {
