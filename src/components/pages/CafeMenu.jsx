@@ -5,10 +5,17 @@ import Footer from '../layout/Footer';
 import GoBack from '../../common/GoBack.jsx';
 import MenuCard from './Cards/MenuCard.jsx';
 import { menuData } from '../mockData/menuData.js';
+import { useState } from "react";
 
 
-const CafeMenu = ({ isLoading, menu = [], menuError }) => {
+const CafeMenu = ({ isLoading, menuError }) => {
     const navigate = useNavigate();
+
+    const [selectedCategory, setSelectedCategory] = useState("Espresso");
+
+    const filteredMenu = menuData.filter(
+        (item) => item.category === setSelectedCategory
+    );
 
     const handleGoToHomePage = () => {
         navigate('/');
@@ -24,134 +31,33 @@ const CafeMenu = ({ isLoading, menu = [], menuError }) => {
             </ErrorPage>
         );
     } else {
-        const espressoDrinks = menuData.filter((menu) => {
-            return menu.category === "Espresso";
-        });
-
-        const latteDrinks = menuData.filter((menu) => {
-            return menu.category === "Latte";
-        });
-
-        const teaDrinks = menuData.filter((menu) => {
-            return menu.category === "Tea";
-        });
-
-        const pastries = menuData.filter((menu) => {
-            return menu.category === "Pastries";
-        });
-
-        const breakfast = menuData.filter((menu) => {
-            return menu.category === "Breakfast";
-        });
-
-        const lunch = menuData.filter((menu) => {
-            return menu.category === "Lunch";
-        });
-
-        let espressoJSX = espressoDrinks.map((menu) => {
-            return (
-                <li className="menu-card-item" key={menu.id}>
-                    <MenuCard menu={menu} />
-                </li>
-            );
-        });
-
-        let latteJSX = latteDrinks.map((menu) => {
-            return (
-                <li className="menu-card-item" key={menu.id}>
-                    <MenuCard menu={menu} />
-                </li>
-            );
-        });
-
-        let teaJSX = teaDrinks.map((menu) => {
-            return (
-                <li className="menu-card-item" key={menu.id}>
-                    <MenuCard menu={menu} />
-                </li>
-            );
-        });
-
-        let pastriesJSX = pastries.map((menu) => {
-            return (
-                <li className="menu-card-item" key={menu.id}>
-                    <MenuCard menu={menu} />
-                </li>
-            );
-        });
-
-        let breakfastJSX = breakfast.map((menu) => {
-            return (
-                <li className="menu-card-item" key={menu.id}>
-                    <MenuCard menu={menu} />
-                </li>
-            );
-        });
-
-        let lunchJSX = lunch.map((menu) => {
-            return (
-                <li className="menu-card-item" key={menu.id}>
-                    <MenuCard menu={menu} />
-                </li>
-            );
-        });
-
-
         return (
             <main className="menu-page">
                 <h1 className="menu-header">MENU</h1>
+                <h3>Good coffee, cozy bites & plenty of purrs</h3>
 
-                <h2 className="menu-h2">Espresso</h2>
-                {espressoDrinks.length ? (
-                    <div className="menu-card-container">{espressoJSX}</div>
+                <div className="menu-category-buttons">
+                    <button onClick={() => setSelectedCategory("Espresso")}>Espresso</button>
+                    <button onClick={() => setSelectedCategory("Latte")}>Latte</button>
+                    <button onClick={() => setSelectedCategory("Tea")}>Tea</button>
+                    <button onClick={() => setSelectedCategory("Pasteries")}>Pasteries</button>
+                    <button onClick={() => setSelectedCategory("Breakfast")}>Breakfast</button>
+                    <button onClick={() => setSelectedCategory("Lunch")}>Lunch</button>
+                </div>
+
+                <h2 className="menu-h2">{selectedCategory}</h2>
+
+                {filteredMenu.length ? (
+                    <div className="menu-card-container">
+                        {filteredMenu.map((menu) => (
+                            <li className="menu-card-item" key={menu.id}>
+                                <MenuCard menu={menu} />
+                            </li>
+                        ))}
+                    </div>
                 ) : (
                     <p>
-                        <em>We're sorry, there are no espresso items to display at this time.</em>
-                    </p>
-                )}
-
-                <h2 className="menu-h2">Lattes</h2>
-                {latteDrinks.length ? (
-                    <div className="menu-card-container">{latteJSX}</div>
-                ) : (
-                    <p>
-                        <em>We're sorry, there are no latte items to display at this time.</em>
-                    </p>
-                )}
-
-                <h2 className="menu-h2">Tea</h2>
-                {teaDrinks.length ? (
-                    <div className="menu-card-container">{teaJSX}</div>
-                ) : (
-                    <p>
-                        <em>We're sorry, there are no tea items to display at this time.</em>
-                    </p>
-                )}
-
-                <h2 className="menu-h2">Pastries</h2>
-                {pastries.length ? (
-                    <div className="menu-card-container">{pastriesJSX}</div>
-                ) : (
-                    <p>
-                        <em>We're sorry, there are no pastries items to display at this time.</em>
-                    </p>
-                )}
-
-                <h2 className="menu-h2">Breakfast</h2>
-                {breakfast.length ? (
-                    <div className="menu-card-container">{breakfastJSX}</div>
-                ) : (
-                    <p>
-                        <em>We're sorry, there are no breakfast items to display at this time.</em>
-                    </p>
-                )}
-
-                <h2 className="menu-h2">Lunch</h2>
-                {lunch.length ? (
-                    <div className="menu-card-container">{lunchJSX}</div>
-                ) : (
-                    <p>
-                        <em>We're sorry, there are no lunch items to display at this time.</em>
+                        <em>We're sorry, there are no {selectedCategory} items to display at this time.</em>
                     </p>
                 )}
 

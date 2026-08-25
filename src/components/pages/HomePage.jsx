@@ -3,10 +3,21 @@ import { Link } from "react-router";
 import Button from './../../forms/input/Button.jsx';
 import Spacer from '../../common/Spacer.jsx';
 import VolunteerForm from '../../forms/VolunteerForm.jsx'
+import { useNavigate } from "react-router";
  
-const HomePage = ({home}) => {
-    const [ openForm, setOpenForm ] = useState(false);
-    const [ showSuccess, setShowSuccess ] = useState(false);
+const HomePage = ({ home }) => {
+    const navigate = useNavigate();
+
+    const [openForm, setOpenForm] = useState(false);
+    const [showSuccess, setShowSuccess] = useState(false);
+
+    const handleGoToMeetTheCats = () => {
+    navigate('/cats');
+
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 0);
+};
 
     const handleToggleForm = () => {
         setOpenForm(prevOpenForm => !prevOpenForm);
@@ -67,11 +78,11 @@ const HomePage = ({home}) => {
 
                 <section className='sponsor-ad'>
                     <img
-                    className="sponser-image"
+                    className="sponsor-image"
                     src="https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2001_28_44%20PM.png"
                     alt="The Daily Purr Cat Cafe Lounge"
                     />
-                    <div className="sponser-content"></div>
+                    <div className="sponsor-content">
                     <h3>Meet Our Rescue Partner </h3>
                             <p>
                                 Every cat deserves a place to call home.
@@ -82,69 +93,81 @@ const HomePage = ({home}) => {
                             <p>
                                 When you visit The Daily Purr, you're not just getting your daily dose of caffeine and cuddles. You're helping rescue cats get one step closer to home.
                             </p>
-                            <p>
-                                Meet Our Adoptable Cats
-                            </p>
+
+                            <div className="sponsor-button-container">
+                                <Button
+                                    type="button"
+                                    label="Meet Our Adoptable Cats"
+                                    handleClick={handleGoToMeetTheCats}
+                                />
+                            </div>
+                            </div>
                 </section>
 
 
 
                 <section className='volunteer-form'>
-                    <img
-                    className="volunteer-image"
-                    src="https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2001_30_07%20PM.png"
-                    alt="The Daily Purr Cat Cafe Lounge"
-                    />
-                    <div className="why-volunteer-box">
-                        <h3>Why Volunteer?</h3>
-                        <ul>
-                            <li>
-                                Help care for cats and support adoptions
-                            </li>
-                            <li>
-                                Create a welcoming experience for visitors
-                            </li>
-                            <li>
-                                Be part of a kind, passionate community
-                            </li>
-                        </ul>
-                    </div>
+                    <div className="volunteer-content">
+                        <div className="volunteer-info-container">
+                            
+                            <div className="why-volunteer-box">
+                                <h3>Why Volunteer?</h3>
+                                <ul>
+                                    <li>
+                                        Help care for cats and support adoptions
+                                    </li>
+                                    <li>
+                                        Create a welcoming experience for visitors
+                                    </li>
+                                    <li>
+                                        Be part of a kind, passionate community
+                                    </li>
+                                </ul>
+                            </div>
+                    
 
-                    <div className="ways-to-help-box">
-                        <h3>Ways You Can Help</h3>
-                        <ul>
-                            <li>
-                                Cat Care & Enrichment
-                            </li>
-                            <li>
-                                Cafe Support
-                            </li>
-                            <li>
-                                Events & Outreach
-                            </li>
-                            <li>
-                                Admin & Social Media
-                            </li>
-                        </ul>
-                        <Spacer marginY="20px" />
-                    </div>
-                    {openForm ? (
-                        <VolunteerForm 
-                            handleCloseForm={handleToggleForm}
-                            setShowSuccess={setShowSuccess}
-                        />
-                    ) : (
-                        <div className="volunteer-form-button-container">
-                            <Button 
-                                id={`volunteer-form`}
-                                type="button"
-                                label="Become a Volunteer"
-                                handleClick={handleToggleForm}
-                            />
-                            <Spacer marginY="20px" />
+                            <div className="ways-to-help-box">
+                                <h3>Ways You Can Help</h3>
+                                <ul>
+                                    <li>
+                                        Cat Care & Enrichment
+                                    </li>
+                                    <li>
+                                        Cafe Support
+                                    </li>
+                                    <li>
+                                        Events & Outreach
+                                    </li>
+                                    <li>
+                                        Admin & Social Media
+                                    </li>
+                                </ul>
+                                <Spacer marginY="20px" />
+                            </div>
                         </div>
-                    )}
-                                     
+                            
+                            {openForm ? (
+                                <VolunteerForm 
+                                    handleCloseForm={handleToggleForm}
+                                    setShowSuccess={setShowSuccess}
+                                />
+                            ) : (
+                                <div className="volunteer-form-button-container">
+                                    <Button 
+                                        id={`volunteer-form`}
+                                        type="button"
+                                        label="Become a Volunteer"
+                                        handleClick={handleToggleForm}
+                                    />
+                                    <Spacer marginY="20px" />
+                                </div>
+                            )}
+                        </div>
+                        <img
+                        className="volunteer-image"
+                        src="https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2001_30_07%20PM.png"
+                        alt="The Daily Purr Cat Cafe Lounge"
+                        />          
                 </section>
         </main>
     );

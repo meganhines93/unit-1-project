@@ -46,5 +46,17 @@
     width: 100%;
     background-color: #4A3028;
     color: white;
+    padding: 40px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 75px;;
 }
 
+.footer-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

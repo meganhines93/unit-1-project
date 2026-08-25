@@ -75,32 +75,56 @@
                 margin-bottom: 25px;
                 border-radius: 10px;
                 display: flex;
-                flex-direction: column;
                 align-items: center;
             }
 
-            .sponser-image {
+            .sponsor-image {
                 width: 40%;
                 max-width: 500px;
                 border-radius: 10px;
+            }
+
+            .sponsor-content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
             }
 
 /* VOLUNTEER FORM SECTION */
             .volunteer-form {
                 background-color: #263238;
                 color: white;
-                padding: 20px;
+                padding: 40px;
                 margin-bottom: 25px;
+                margin-top: 20px;
                 border-radius: 10px;
                 display: flex;
-                flex-direction: column;
                 align-items: center;
+                gap: 50px;
             }
 
             .volunteer-image {
                 width: 40%;
                 max-width: 500px;
                 border-radius: 10px;
+            }
+
+            .volunteer-content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .volunteer-info-container{
+                display: flex;
+                gap: 50px;
+                align-items: flex-start;
+            }
+
+            .volunteer-form-button-container{
+                margin-top: 20px;
             }
 
 
@@ -127,7 +151,7 @@
 
             .cat-card-container {
                 display: grid;
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(4,1fr) !important;
                 gap: 25px;
                 list-style: none;
                 margin: 20px 0 0;
@@ -151,6 +175,7 @@
             .cat-card-image {
                 width: 100%;
                 display: block;
+                border-radius: 50%;
             } 
 
 
@@ -174,9 +199,7 @@
             } 
 
 /* CAT DETAILS PAGE */
-            .cat-card-image {
-                width: 500px;
-            }
+
 
             .cat-details-section {
                 background-color: #263238;
@@ -222,14 +245,7 @@
 
 /* EVENT CARDS */
 
-            .event-card-container {
-                display: grid;
-                grid-template-columns: 1fr;
-                gap: 25px;
-                list-style: none;
-                margin: 20px 0 0;
-                padding: 0;
-            }
+
 
 
             .event-card-item {
@@ -293,15 +309,10 @@
                 text-align: center;
             }
 
-            .menu-card-image {
-                width: 40%;
-                max-width: 500px;
-                border-radius: 10px;
-            }
 
             .menu-card-container {
                 display: grid;
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(5, 1fr);
                 gap: 25px;
                 list-style: none;
                 margin: 20px 0 0;
@@ -342,3 +353,29 @@
                 text-transform: uppercase;
             }
 
+            
+
+.menu-card-container {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 25px;
+}
+
+            .event-card-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr) !important;
+                gap: 25px;
+                list-style: none;
+                margin: 20px 0 0;
+                padding: 0;
+            }
+
+
+button {
+    background-color: #C66311;
+    color: white;
+    border: none;
+}
+button:hover {
+    background-color: #632d04;
+}

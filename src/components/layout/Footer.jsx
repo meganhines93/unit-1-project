@@ -14,8 +14,8 @@ const Footer = () => {
     return(
         <footer className='footer'>
             <section className='newsletter-signup'>
-                <h2>Stay in the Loop</h2>
-                <h3>Join our mailing list for updates on events, new cats, and specials!</h3>
+                <h3>Stay in the Loop</h3>
+                <h4>Join our mailing list for updates on events, new cats, and specials!</h4>
 
                 <form id="newsletter" onSubmit={handleSubmit}>
                     <label htmlFor="email">Email Address</label>
@@ -40,15 +40,15 @@ const Footer = () => {
             </section>
 
             <section className='hours-of-operation'>
-                <h2>Hours of Operation</h2>
-                <h3>Tues-Sunday</h3>
-                <h3>10 AM - 3 PM</h3>
+                <h3>Hours of Operation</h3>
+                <h4>Tues-Sunday</h4>
+                <h4>10 AM - 3 PM</h4>
             </section>
 
             <section className='store-address'>
-                <h2>Store Address</h2>
-                <h3>123 Cat Avenue</h3>
-                <h3>St.Louis, MO 63123</h3>
+                <h3>Store Address</h3>
+                <h4>123 Cat Avenue</h4>
+                <h4>St.Louis, MO 63123</h4>
             </section>
         </footer>
     );
