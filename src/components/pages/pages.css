@@ -342,7 +342,7 @@
 
 
 /* MENU CARD */
-            .menu-header,{
+            .menu-header{
                 color: black;
                 text-align: center;
             }
@@ -353,7 +353,8 @@
                 text-align: center;
             }
 
-            .menu-category-buttons {
+            .menu-category-buttons,
+            .event-category-buttons {
                 text-align: center;
             }
 
