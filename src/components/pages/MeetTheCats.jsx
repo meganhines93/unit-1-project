@@ -53,8 +53,10 @@ const MeetTheCats = ({ isLoading, catsError }) => {
     return (
         <main className="meet-the-cats-page">
             <h1 className="meet-the-cats-header">MEET THE CATS</h1>
-            <h3>Each of our cats has a unique story and a loving heart.</h3>
-            <h3>Click on a cat to learn more about them!</h3>
+            <div className="meet-the-cats-subtitle">
+            <p>Each of our cats has a unique story and a loving heart.</p>
+            <p>Click on a cat to learn more about them!</p>
+            </div>
 
             {catData.length ? (
                 <ul className="cat-card-container">

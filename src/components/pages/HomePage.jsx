@@ -83,7 +83,7 @@ const HomePage = ({ home }) => {
                     alt="The Daily Purr Cat Cafe Lounge"
                     />
                     <div className="sponsor-content">
-                    <h3>Meet Our Rescue Partner </h3>
+                    <h2>Meet Our Rescue Partner </h2>
                             <p>
                                 Every cat deserves a place to call home.
                             </p>
@@ -107,10 +107,13 @@ const HomePage = ({ home }) => {
 
 
                 <section className='volunteer-form'>
+
                     <div className="volunteer-top-section">
+
                         <div className="volunteer-content">
+                            <h2>Volunteer</h2>
+
                             <div className="volunteer-info-container">
-                            
                                 <div className="why-volunteer-box">
                                     <h3>Why Volunteer?</h3>
                                     <ul>

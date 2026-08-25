@@ -177,6 +177,12 @@
 
             .meet-the-cats-header{
                 color: black;
+                text-align: center;
+            }
+
+            .meet-the-cats-subtitle {
+                color: black;
+                text-align: center;
             }
 
             /* CAT CARDS */
@@ -213,25 +219,24 @@
                 width: 100%;
                 display: block;
                 border-radius: 50%;
+                border: orange;
             } 
 
 
             .cat-card-content {
                 padding: 20px;
+                text-align: center;
             } 
 
 
             .cat-card-name {
                 color: #c66311;
-                font-size: 1.1rem;
                 font-weight: 700;
                 text-transform: uppercase;
             } 
             
             .cat-card-personality {
                 color: white;
-                font-size: 1.1rem;
-                font-weight: 700;
                 text-transform: uppercase;
             } 
 
@@ -438,4 +443,9 @@ button {
 }
 button:hover {
     background-color: #632d04;
+}
+
+
+body {
+    font-family: "Lora"
 }

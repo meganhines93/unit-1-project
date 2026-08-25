@@ -22,8 +22,8 @@ const CatCard = ({ cat }) => {
                         alt={'Cat Profile Picture'}
                     />
                     <div className="cat-card-content">
-                        <h3 className="cat-card-name">{cat.name}</h3>
-                        <h4 className="cat-card-personality">{cat.personality}</h4>   
+                        <h2 className="cat-card-name">{cat.name}</h2>
+                        <p className="cat-card-personality">{cat.personality}</p>   
                     </div>
                 </div>
             </Card>
