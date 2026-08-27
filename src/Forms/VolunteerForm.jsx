@@ -95,6 +95,10 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
             if (handleCloseForm) {
                 handleCloseForm();
             }
+
+            setTimeout(() => {
+            setShowSuccess(false);
+        }, 3000)
         }
     };
 

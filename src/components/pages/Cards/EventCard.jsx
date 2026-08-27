@@ -7,6 +7,7 @@ import Spacer from '../../../common/Spacer.jsx';
 const EventCard = ({ event }) => {
     const [ openForm, setOpenForm ] = useState(false);
     const [showSuccess, setShowSuccess] = useState(false);
+    const [registration, setRegistration] = useState(null);
 
     const handleToggleForm = () => {
         setOpenForm(prevOpenForm => !prevOpenForm);
@@ -21,8 +22,11 @@ const EventCard = ({ event }) => {
             />
             <div className="event-card-content">
                 <h2 className="event-card-title">{event.title}</h2>
-                <h3 className="event-card-date-and-time">{event.date} {event.time}</h3>
+
+                <h4 className="event-card-date-and-time">{event.date} {event.time}</h4>
+
                 <p>{event.description}</p>
+
                 <Spacer marginY="20px" />
             </div> 
                     <div className="price">Price ${event.price}</div>
@@ -32,6 +36,8 @@ const EventCard = ({ event }) => {
                     <div className="registration-form-wrapper">
                         <EventRegistrationForm 
                             event={event} 
+                            registration={registration}
+                            setRegistration={setRegistration}
                             handleCloseForm={handleToggleForm} 
                             setShowSuccess={setShowSuccess}
                         />
@@ -41,13 +47,17 @@ const EventCard = ({ event }) => {
                         <Button
                             id={`register-event-${event.id}`}
                             type="button"
-                            label="Register"
+                            label={registration ? "Edit Registration" : "Register"}
                             handleClick={handleToggleForm}
                         />
                     </div>
                 )}
                 {showSuccess && (
-                    <p>Registration submitted successfully!</p>
+                    <p className="success-message">{registration
+                        ? "Registration submitted successfully!"
+                        : "Registration submitted successfully!"}
+                    </p>
+                        
                 )}
         </div>
     );

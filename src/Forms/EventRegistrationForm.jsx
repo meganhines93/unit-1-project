@@ -22,8 +22,8 @@ const errorMessages = {
     numberOfGuestsRequired: 'At least 1 guest required.'
 };
 
-const EventRegistrationForm = ({ event, handleCloseForm, setShowSuccess }) => {
-    const [data, setData] = useState({ ...initialData, eventId: event.id });
+const EventRegistrationForm = ({ event, registration, setRegistration, handleCloseForm, setShowSuccess }) => {
+    const [data, setData] = useState( registration || { ...initialData, eventId: event.id });
     const [hasErrors, setHasErrors] = useState(false);
 
     const isValid = () => {
@@ -49,9 +49,14 @@ const EventRegistrationForm = ({ event, handleCloseForm, setShowSuccess }) => {
         if (!isValid()) {
             setHasErrors(true);
         } else {
+            setRegistration(data);
             setShowSuccess(true);
             handleCloseForm();
         }
+
+        setTimeout(() => {
+            setShowSuccess(false);
+        }, 3000)
     };
 
     return (
@@ -109,8 +114,7 @@ const EventRegistrationForm = ({ event, handleCloseForm, setShowSuccess }) => {
                     <Input 
                         id="phoneNumber"
                         label="Phone Number"
-                        type="number"
-                        min="10"
+                        type="text"
                         value={data.phoneNumber}
                         required={true}
                         handleChange={handleDataChange}
@@ -149,7 +153,10 @@ const EventRegistrationForm = ({ event, handleCloseForm, setShowSuccess }) => {
                 <Button
                     id={`submit-event-${event.id}`}
                     type="submit"
-                    label="Reserve"
+                    label={registration
+                            ? "Save Changes"
+                            : "Reserve"
+                            }
                     classes="submit-register-button"
                 />
             </div>

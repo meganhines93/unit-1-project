@@ -84,7 +84,7 @@ const HomePage = ({ home }) => {
                     alt="The Daily Purr Cat Cafe Lounge"
                     />
                     <div className="sponsor-content">
-                    <h2>Meet Our Rescue Partner </h2>
+                    <h2>Our Rescue Partner </h2>
                             <p>
                                 Every cat deserves a place to call home.
                             </p>
@@ -166,9 +166,9 @@ const HomePage = ({ home }) => {
                     </div>
 
                     {showSuccess && (
-                        <div className="success-banner">
-                            Success! Your volunteer form was sent.
-                        </div>
+                        <p className="success-message">
+                            Thank you for volunteering!
+                        </p>
                     )}       
 
                     {openForm && (

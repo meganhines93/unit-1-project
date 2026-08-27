@@ -458,6 +458,7 @@ button {
     background-color: #C66311;
     color: white;
     border: none;
+    transition: background-color 0.3s ease;
 }
 button:hover {
     background-color: #632d04;

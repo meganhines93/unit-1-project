@@ -95,6 +95,11 @@ const AdoptionForm = ({ handleCloseForm }) => {
             if (handleCloseForm) {
                 handleCloseForm();
             }
+
+            setTimeout(() => {
+            setShowSuccess(false);
+        }, 3000)
+        
         }
     };
 

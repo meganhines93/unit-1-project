@@ -9,6 +9,10 @@ const Footer = () => {
 
         setEmail('');
         setShowSuccess(true);
+
+        setTimeout(() => {
+            setShowSuccess(false);
+        }, 3000)
     };
 
     return(
@@ -33,9 +37,9 @@ const Footer = () => {
                 </form>
 
                 {showSuccess && (
-                    <div id="success-banner" className="banner">
-                        Thanks for joining!
-                    </div>
+                    <p className="success-message">
+                        Thank you for signing up!
+                    </p>
                 )}
             </section>
 
