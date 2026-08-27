@@ -47,10 +47,9 @@
     background-color: #4A3028;
     color: white;
     padding: 40px;
-    margin-bottom: 25px;
     margin-top: 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 75px;;
 }
 
@@ -59,4 +58,36 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.newsletter-signup {
+    flex:2;
+}
+
+.newsletter-signup input {
+    padding: 8px;
+}
+
+.newsletter-signup button {
+    padding: 8px 15px;
+}
+
+.banner {
+    margin-top: 10px;
+}
+
+.hours-of-operation {
+    flex: 1;
+}
+
+.store-address {
+    flex:1;
+}
+
+.footer h3 {
+    margin-top: 0;
+}
+
+.footer p {
+    margin: 8px 0;
 }

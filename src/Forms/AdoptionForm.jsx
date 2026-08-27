@@ -86,15 +86,29 @@ const AdoptionForm = ({ handleCloseForm }) => {
         if (!isValid()) {
             setHasErrors(true);
         } else {
-            handleCloseForm();
+            console.log(data);
+
+            setData({ ...initialData });
+            setHasErrors(false);
+            setShowSuccess(true);
+
+            if (handleCloseForm) {
+                handleCloseForm();
+            }
         }
     };
 
     return (
         <>
-            <form className="adoption-form-grid" onSubmit={handleSubmit}>
-                <h2>Your Information</h2>
+            <div className="adoption-form-content">
+                <h1>Adoption Application</h1>
+                <p>Thank you for choosing adoption.</p>
+                <p>You're about to change a life!</p>
+            </div>
 
+            <form className="adoption-form-grid" onSubmit={handleSubmit}>
+                <h3>Personal Information</h3>
+                <section className='personal-information-section'>
                 <FormItem classes="first-name-item">
                     <label htmlFor="firstname">First Name</label>
                     <p></p>
@@ -229,10 +243,12 @@ const AdoptionForm = ({ handleCloseForm }) => {
                         msg={errorMessages['zipCodeRequired']}
                     />
                 </FormItem>
-
+                </section>
                 <Spacer marginY="20px" />
 
-                <h2>About Your Home</h2>
+                <h3>About Your Home</h3>
+
+                <section className="about-your-home-section">
 
                 <FormItem classes="about-your-home-item">
                     <label htmlFor="aboutYourHome">
@@ -280,11 +296,11 @@ const AdoptionForm = ({ handleCloseForm }) => {
                         msg={errorMessages['typeOfHomeRequired']}
                     />
                 </FormItem>
-
+                </section>
                 <Spacer marginY="20px" />
 
-                <h2>Adoption Details</h2>
-
+                <h3>Adoption Details</h3>
+                <section className='adoption-details-section'>
                 <FormItem classes="cat-interested-in-item">
                     <label htmlFor="catInterestedIn">
                         Which cat are you interested in adopting?
@@ -389,11 +405,11 @@ const AdoptionForm = ({ handleCloseForm }) => {
                         msg={errorMessages['newCatLifeRequired']}
                     />
                 </FormItem>
-
+                </section>
                 <Spacer marginY="20px" />
 
                 <h2>Commitment</h2>
-
+                <section className='commitment-section'>
                 <FormItem classes="commitment-entire-life-item">
                     <label htmlFor="commitmentEntireLife">
                         Are you prepared to provide for this cat for their entire life?
@@ -437,10 +453,10 @@ const AdoptionForm = ({ handleCloseForm }) => {
                         msg={errorMessages['keepIndoorsRequired']}
                     />
                 </FormItem>
-                
+                </section>
                 <Spacer marginY="20px" />
 
-                <h2>Additional Comments (Optional) </h2>
+                <h3>Additional Comments (Optional) </h3>
 
                 <FormItem classes="additional-comments-item">
                     <label htmlFor="additionalComments">

@@ -24,11 +24,11 @@
 
 
         .registration-form-wrapper {
-            background-color: #f7f2e9;
+            background-color: pink;
             color: #263238;
             margin-top: 20px;
             padding: 30px;
-            border-radius: 10px;
+  
         }
 
         .register-form-grid input {
@@ -44,4 +44,22 @@
 
         .registration-button-container button {
             flex: 1;
+        }
+
+
+        .adoption-form-button-container {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        #adoption-form-button {
+            background-color: #C66311;
+            color: white;
+            font-size: 18px;
+            padding: 12px 24px;
+        }
+
+        #adoption-form-button:hover {
+            background-color: #632d04;
         }

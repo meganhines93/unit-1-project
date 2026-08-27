@@ -101,14 +101,14 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
     return (
         <>
             <div className="volunteer-form-content">
-                <h3>Volunteer</h3>
-                <h4>Make a Pawsitive Difference</h4>
+                <h1>Volunteer</h1>
+                <h2>Make a Pawsitive Difference</h2>
                 <p>Thank you for your interest in volunteering at The Daily Purr Cat Cafe!</p>
                 <p>Your time and compassion help us care for our cats and create a welcoming experience for our community.</p>
             </div>
 
             <form className="volunteer-form-grid" onSubmit={handleSubmit}>
-                <h2>PERSONAL INFORMATION</h2>
+                <h3>PERSONAL INFORMATION</h3>
 
                 <section className='personal-information-section'>
                 <FormItem classes="first-name-item">
@@ -225,7 +225,7 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
                 </section>
 
                 <section className="availability-section">
-                <h2>AVAILABILITY</h2>
+                <h3>AVAILABILITY</h3>
 
                 <FormItem classes="days-available-item">
                     <p>What days are you available?*</p>
@@ -323,7 +323,7 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
                 </section>
 
                 <section className="tell-us-about-you">
-                <h2>TELL US ABOUT YOU</h2>
+                <h3>TELL US ABOUT YOU</h3>
 
                 <FormItem classes="experience-item">
                     <label htmlFor="experience-item">Why do you want to volunteer at The Daily Purr?</label>

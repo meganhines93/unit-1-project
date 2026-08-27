@@ -23,6 +23,7 @@ const HomePage = ({ home }) => {
         setOpenForm(prevOpenForm => !prevOpenForm);
     }; 
 
+
     return(
             <main className='home-page'>
 
@@ -79,7 +80,7 @@ const HomePage = ({ home }) => {
                 <section className='sponsor-ad'>
                     <img
                     className="sponsor-image"
-                    src="https://ik.imagekit.io/bbk3azqkom/ChatGPT%20Image%20Aug%2017,%202026,%2001_28_44%20PM.png"
+                    src="https://ik.imagekit.io/bbk3azqkom/Helping%20Paws%20Rescue%20(2).png"
                     alt="The Daily Purr Cat Cafe Lounge"
                     />
                     <div className="sponsor-content">

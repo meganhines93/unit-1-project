@@ -27,8 +27,13 @@
             }
 
 
-            .about-content h2 {
+            .about-content h2,
+            .visit-content h2,
+            .sponsor-content h2,
+            .volunteer-content h2
+             {
                 margin-top: 0;
+                color: #c66311;
             }
 
 
@@ -219,7 +224,6 @@
                 width: 100%;
                 display: block;
                 border-radius: 50%;
-                border: orange;
             } 
 
 
@@ -268,6 +272,20 @@
                 align-items: flex-start;
             }
 
+            .personality-container,
+            .goodWith-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            .personality-bubble,
+            .goodWith-bubble {
+                background-color: #37474F;
+                color: white;
+                padding: 8px 16px;
+                border-radius: 10px;
+            }
             
   
 
@@ -449,3 +467,66 @@ button:hover {
 body {
     font-family: "Lora"
 }
+
+
+
+/* VOLUNTEER FORM SECTION */
+            .volunteer-form,
+            .adoption-form {
+                background-color: #263238;
+                color: white;
+                padding: 40px;
+                margin-bottom: 25px;
+                margin-top: 20px;
+                border-radius: 10px;
+            }
+
+            .volunteer-top-section {
+                display: flex;
+                align-items: center;
+                gap: 50px;
+            }
+
+            .volunteer-image {
+                width: 40%;
+                max-width: 500px;
+                border-radius: 10px;
+            }
+
+            .volunteer-content {
+                flex: 1;
+            }
+
+            .volunteer-info-container{
+                display: flex;
+                gap: 50px;
+                align-items: flex-start;
+            }
+
+            .why-volunteer-box,
+            .ways-to-help-box{
+                flex:1;
+            }
+
+            .volunteer-form-button-container{
+                margin-top: 25px;
+            }
+
+            #volunteer-form {
+                background-color: #C66311;
+                color: white;
+                font-size: 18px;
+                padding: 10px 20px;
+            }
+
+            #volunteer-form:hover {
+                background-color: #632d04;
+            }
+
+            .volunteer-form-wrapper {
+                background-color: #F7F2E9;
+                color: #263238;
+                margin-top: 40px;
+                padding: 34px;
+                border-radius: 10px;
+            }

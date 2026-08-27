@@ -41,8 +41,8 @@ const Footer = () => {
 
             <section className='hours-of-operation'>
                 <h3>Hours of Operation</h3>
-                <h4>Tues-Sunday</h4>
-                <h4>10 AM - 3 PM</h4>
+                <h4>Tuesday-Sunday:    10 AM - 3 PM</h4>
+                <h4>Sunday-Monday:     CLOSED</h4>
             </section>
 
             <section className='store-address'>

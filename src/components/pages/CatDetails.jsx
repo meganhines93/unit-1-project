@@ -4,6 +4,7 @@ import Spacer from '../../common/Spacer.jsx';
 import { catData } from '../mockData/catData';
 import Button from '../../forms/input/Button.jsx';
 import GoBack from '../../common/GoBack.jsx';
+import ErrorPage from './ErrorPage.jsx';
 
 
 const CatDetails = ({ isLoading, catsError }) => {
@@ -60,14 +61,6 @@ const CatDetails = ({ isLoading, catsError }) => {
     return (
         <main className="cat-details-section">
 
-            <div className="view-all-cats-button-container">
-                <Button
-                    type="button"
-                    label="View All Cats"
-                    handleClick={handleGoToMeetTheCats}
-                />
-            </div>
-
             <img
                 className="cat-details-image"
                 src={cat.imageId}
@@ -75,7 +68,13 @@ const CatDetails = ({ isLoading, catsError }) => {
             />
 
             <div className="cat-details-content">
-
+            <div className="view-all-cats-button-container">
+                <Button
+                    type="button"
+                    label="View All Cats"
+                    handleClick={handleGoToMeetTheCats}
+                />
+            </div>
                 <h1 className="cat-name-header">
                     {cat.name}
                 </h1>
@@ -85,7 +84,7 @@ const CatDetails = ({ isLoading, catsError }) => {
                 </h3>
 
                 <h2>
-                    About {cat.name}
+                    ABOUT {cat.name}.
                 </h2>
 
                 <p>
@@ -93,12 +92,34 @@ const CatDetails = ({ isLoading, catsError }) => {
                 </p>
 
                 <h3>
-                    Personality
+                    PERSONALITY
                 </h3>
 
-                <p>
-                    {cat.personality}
-                </p>
+                <div className="personality-container">
+                    {cat.personality.map((trait) => (
+                        <span className="personality-bubble" key={trait}>
+                            {trait}
+                        </span>
+                    ))}
+                </div>
+
+                <h4>
+                    GOOD WITH
+                </h4>
+
+                <div className="goodWith-container">
+                    {cat.goodWith.map((goodWith) => (
+                        <span className="goodWith-bubble" key={goodWith}>
+                            {goodWith}
+                        </span>
+                    ))}
+                </div>
+
+                <h4>
+                    ADOPTION INFO
+                </h4>
+
+                <p> {cat.adoptionInfo} </p>
 
                 <h3>
                     Adoption Fee: ${cat.adoptionFee}

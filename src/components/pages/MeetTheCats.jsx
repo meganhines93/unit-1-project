@@ -6,6 +6,7 @@ import CatCard from './Cards/CatCard';
 import { Link } from 'react-router';
 import Button from './../../forms/input/Button.jsx';
 import Spacer from '../../common/Spacer.jsx';
+import ErrorPage from "./ErrorPage.jsx";
 
 const MeetTheCats = ({ isLoading, catsError }) => {
     const navigate = useNavigate();
