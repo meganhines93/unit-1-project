@@ -24,7 +24,7 @@ const HomePage = () => {
 
     return(
             <main className='home-page'>
-                <h1>The Daily Purr Cat Cafe</h1>
+                <h1 className="home-page-h1">Welcome to The Daily Purr Cat Cafe</h1>
 
                 <section className='about-section'>
                     <img

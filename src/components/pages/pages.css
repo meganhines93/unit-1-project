@@ -1,560 +1,396 @@
+/* Home Page */
+.home-page {
+    background-color: #F7F2E9;
+    padding-top: 20px;
+}
+
+.home-page-h1 {
+    text-align: center;
+}
+
+
 /* ABOUT SECTION */
-            .about-section {
-                background-color: #263238;
-                color: white;
-                padding: 40px;
-                margin-bottom: 25px;
-                margin-top: 20px;
-                border-radius: 10px;
-                display: flex;
-                align-items: center;
-                gap: 50px;
-            }
+.about-section {
+    background-color: #263238;
+    color: white;
+    padding: 40px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
 
+.about-image {
+    width: 40%;
+    max-width: 500px;
+    border-radius: 10px;
+}
 
-            .about-image {
-                width: 40%;
-                max-width: 500px;
-                border-radius: 10px;
-            }
+.about-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+.about-content h2,
+.how-it-works-content h2,
+.sponsor-content h2,
+.volunteer-content h2 {
+    margin-top: 0;
+    color: #c66311;
+}
 
-            .about-content {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-
-            .about-content h2,
-            .how-it-works-content h2,
-            .sponsor-content h2,
-            .volunteer-content h2
-             {
-                margin-top: 0;
-                color: #c66311;
-            }
-
-
-            .about-content p {
-                line-height: 1.6;
-                margin-bottom: 20px;
-            }
+.about-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
 
 
 /* HOW IT WORKS SECTION */
-            .how-it-works-visit {
-                background-color: #263238;
-                color: white;
-                padding: 40px;
-                margin-bottom: 25px;
-                margin-top: 20px;
-                border-radius: 10px;
-                display: flex;
-                align-items: center;
-                gap: 50px;
-            }
+.how-it-works-visit {
+    background-color: #263238;
+    color: white;
+    padding: 40px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
 
+.book-a-visit-image {
+    width: 40%;
+    max-width: 500px;
+    border-radius: 10px;
+}
 
-
-            .book-a-visit-image {
-                width: 40%;
-                max-width: 500px;
-                border-radius: 10px;
-            }
-
-            .how-it-works-content {
-                flex: 1;
-            }
-
-            .how-it-works-content h2 {
-                margin-top: 0;
-            }
-
-            .how-it-works-content h3 {
-                margin-top: 25px;
-                margin-bottom: 8px;
-            }
-
-            .how-it-works-content p {
-                margin-top: 0;
-                line-height: 1.4;
-            }
-
-
-            .how-it-works-section {
-                display: flex;
-                align-items: center;
-                gap: 60px;
-                background-color: #243239;
-                color: white;
-                padding: 40px;
-                border-radius: 10px;
-            }
 
 
 /* MEET OUR RESCUE PARTNER SECTION */
-            .sponsor-ad {
-                background-color: #263238;
-                color: white;
-                padding: 20px;
-                margin-bottom: 25px;
-                border-radius: 10px;
-                display: flex;
-                align-items: center;
-            }
+.sponsor-ad {
+    background-color: #263238;
+    color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
 
-            .sponsor-image {
-                width: 40%;
-                max-width: 500px;
-                border-radius: 10px;
-            }
+.sponsor-image {
+    width: 40%;
+    max-width: 500px;
+    border-radius: 10px;
+}
 
-            .sponsor-content {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-/* VOLUNTEER FORM SECTION */
-            .volunteer-form {
-                background-color: #263238;
-                color: white;
-                padding: 40px;
-                margin-bottom: 25px;
-                margin-top: 20px;
-                border-radius: 10px;
-            }
-
-            .volunteer-top-section {
-                display: flex;
-                align-items: center;
-                gap: 50px;
-            }
-
-            .volunteer-image {
-                width: 40%;
-                max-width: 500px;
-                border-radius: 10px;
-            }
-
-            .volunteer-content {
-                flex: 1;
-            }
-
-            .volunteer-info-container{
-                display: flex;
-                gap: 50px;
-                align-items: flex-start;
-            }
-
-            .why-volunteer-box,
-            .ways-to-help-box{
-                flex:1;
-            }
-
-            .volunteer-form-button-container{
-                margin-top: 25px;
-            }
-
-            #volunteer-form {
-                background-color: #C66311;
-                color: white;
-                font-size: 18px;
-                padding: 10px 20px;
-            }
-
-            #volunteer-form:hover {
-                background-color: #632d04;
-            }
-
-            .volunteer-form-wrapper {
-                background-color: #F7F2E9;
-                color: #263238;
-                margin-top: 40px;
-                padding: 34px;
-                border-radius: 10px;
-            }
-
-            .personal-information-section {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 20px 30px
-            }
-
-            .personal-information-section input {
-                width: 100%;
-                box-sizing: border-box;
-                padding: 10px;
-            }
+.sponsor-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 
+/* VOLUNTEER / ADOPTION FORM SECTION */
+.volunteer-form,
+.adoption-form {
+    background-color: #263238;
+    color: white;
+    padding: 40px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
 
+.volunteer-top-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
 
+.volunteer-image {
+    width: 40%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.volunteer-content {
+    flex: 1;
+}
+
+.volunteer-info-container {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.why-volunteer-box,
+.ways-to-help-box {
+    flex: 1;
+}
+
+.volunteer-form-button-container {
+    margin-top: 25px;
+}
+
+#volunteer-form {
+    background-color: #C66311;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+#volunteer-form:hover {
+    background-color: #632d04;
+}
+
+.volunteer-form-wrapper {
+    background-color: #F7F2E9;
+    color: #263238;
+    margin-top: 40px;
+    padding: 34px;
+    border-radius: 10px;
+}
+
+.personal-information-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
+}
+
+.personal-information-section input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
 
 
 /* CAT PAGE */
+.meet-the-cats-page,
+.events-page,
+.menu-page {
+    background-color: #F7F2E9;
+    padding: 30px 20px;
+}
 
-            .meet-the-cats-page {
-                background-color: #F7F2E9;
-                padding: 30px 20px;
-            } 
+.meet-the-cats-header,
+.events-header,
+.menu-header {
+    color: black;
+    text-align: center;
+}
 
-            .meet-the-cats-header{
-                color: black;
-                text-align: center;
-            }
-
-            .meet-the-cats-subtitle {
-                color: black;
-                text-align: center;
-            }
-
-            /* CAT CARDS */
-
-            .cat-header{
-                color: black;
-                text-align: center;
-            } 
-
-            .cat-card-container {
-                display: grid;
-                grid-template-columns: repeat(4,1fr) !important;
-                gap: 25px;
-                list-style: none;
-                margin: 20px 0 0;
-                padding: 0;
-            }
-
-            .cat-card-item {
-                list-style: none;
-                background-color: pink;
-                border-radius: 10px;
-                overflow: hidden;
-            }
+.meet-the-cats-subtitle,
+.events-subtitle,
+.menu-subtitle {
+    color: black;
+    text-align: center;
+}
 
 
-            .cat-card {
-                background-color: pink;
-                color: white;
-                height: 100%;
-            }
+/* CAT CARDS */
+.cat-header {
+    color: black;
+    text-align: center;
+}
 
-            .cat-card-image {
-                width: 100%;
-                display: block;
-                border-radius: 50%;
-            } 
+.cat-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+}
 
+.cat-card-item {
+    list-style: none;
+    background-color: pink;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
-            .cat-card-content {
-                padding: 20px;
-                text-align: center;
-            } 
+.cat-card {
+    background-color: pink;
+    color: white;
+    height: 100%;
+}
 
+.cat-card-image {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
 
-            .cat-card-name {
-                color: #c66311;
-                font-weight: 700;
-                text-transform: uppercase;
-            } 
-            
-            .cat-card-personality {
-                color: white;
-                text-transform: uppercase;
-            } 
+.cat-card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.cat-card-name {
+    color: #c66311;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cat-card-personality {
+    color: white;
+    text-transform: uppercase;
+}
+
 
 /* CAT DETAILS PAGE */
+.cat-details-section {
+    background-color: #263238;
+    color: white;
+    padding: 40px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
 
+.cat-details-image {
+    width: 40%;
+    max-width: 500px;
+    border-radius: 10px;
+}
 
-            .cat-details-section {
-                background-color: #263238;
-                color: white;
-                padding: 40px;
-                margin-bottom: 25px;
-                margin-top: 20px;
-                border-radius: 10px;
-                display: flex;
-                align-items: center;
-                gap: 50px;
-            }
+.cat-details-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
-            .cat-details-image {
-                width: 40%;
-                max-width: 500px;
-                border-radius: 10px;
-            }
+.personality-container,
+.goodWith-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
 
-            .cat-details-content {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-            }
+.personality-bubble,
+.goodWith-bubble {
+    background-color: #37474F;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
 
-            .personality-container,
-            .goodWith-container {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 12px;
-            }
-
-            .personality-bubble,
-            .goodWith-bubble {
-                background-color: #37474F;
-                color: white;
-                padding: 8px 16px;
-                border-radius: 10px;
-            }
-            
-  
 
 /* EVENTS PAGE */
+.event-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+}
 
-            .events-page {
-                background-color: #F7F2E9;
-                padding: 30px 20px;
-            }
+.event-card-item {
+    list-style: none;
+    background-color: #263238;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
-/* EVENT HEADER */
-            .events-header{
-                color: black;
-                text-align: center;
-            }
+.event-card {
+    background-color: #263238;
+    color: white;
+    height: 100%;
+}
 
+.event-card-image,
+.menu-card-image {
+    width: 100%;
+    display: block;
+}
 
-/* EVENT CARDS */
+.event-card-content,
+.menu-card-content {
+    padding: 20px;
+}
 
+.event-card-title {
+    color: #c66311;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
-
-
-            .event-card-item {
-                list-style: none;
-                background-color: #263238;
-                border-radius: 10px;
-                overflow: hidden;
-            }
-
-
-            .event-card {
-                background-color: #263238;
-                color: white;
-                height: 100%;
-            }
-
-
-            .event-card-image {
-                width: 100%;
-                display: block;
-            }
-
-
-            .event-card-content {
-                padding: 20px;
-            }
-
-
-            .event-card-title {
-                color: #c66311;
-                font-size: 1.1rem;
-                font-weight: 700;
-                text-transform: uppercase;
-            }
-
-
-            .event-card-subtitle,
-            .event-card-bio-heading,
-            .event-registration-event-title {
-                color: #c66311;
-                font-size: 1rem;
-                font-weight: 600;
-                text-transform: none;
-            }
-
-
-
-
-
+.event-card-subtitle,
+.event-card-bio-heading,
+.event-registration-event-title {
+    color: #c66311;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: none;
+}
 
 
 /* MENU PAGE */
-            .menu-page {
-                background-color: #F7F2E9;
-                padding: 30px 20px;
-            }
-
-
-/* MENU CARD */
-            .menu-header{
-                color: black;
-                text-align: center;
-            }
-
-            .menu-subtitle,
-            .events-subtitle {
-                color: black;
-                text-align: center;
-            }
-
-            .menu-category-buttons,
-            .event-category-buttons {
-                text-align: center;
-            }
-
-            .menu-title{
-                text-align: center;
-            }
-
-
-            .menu-card-container {
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                gap: 25px;
-                list-style: none;
-                margin: 20px 0 0;
-                padding: 0;
-            }
-
-
-            .menu-card-item {
-                list-style: none;
-                background-color: #263238;
-                border-radius: 10px;
-                overflow: hidden;
-            }
-
-
-            .menu-card {
-                background-color: #263238;
-                color: white;
-                height: 100%;
-            }
-
-            .menu-card-name {
-                color: #c66311;
-                font-size: 1.1rem;
-                font-weight: 700;
-                text-transform: uppercase;
-            }
-
-
-            .menu-card-image {
-                width: 100%;
-                display: block;
-            }
-
-
-            .menu-card-content {
-                padding: 20px;
-            }
-
-
-            .menu-card-title {
-                color: #c66311;
-                font-size: 1.1rem;
-                font-weight: 700;
-                text-transform: uppercase;
-            }
-
-            
-
-.menu-card-container {
-    display: grid !important;
-    grid-template-columns: repeat(5, 1fr) !important;
-    gap: 25px;
+.menu-category-buttons,
+.event-category-buttons {
+    text-align: center;
 }
 
-            .event-card-container {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr) !important;
-                gap: 25px;
-                list-style: none;
-                margin: 20px 0 0;
-                padding: 0;
-            }
+.menu-title {
+    text-align: center;
+}
+
+.menu-card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.menu-card-item {
+    list-style: none;
+    background-color: #263238;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu-card {
+    background-color: #263238;
+    color: white;
+    height: 100%;
+}
+
+.menu-card-name,
+.menu-card-title {
+    color: #c66311;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
 
+/* BUTTONS */
 button {
     background-color: #C66311;
     color: white;
-    border: none;}
+    border: none;
+}
+
 button:hover {
     background-color: #632d04;
 }
 
 
-body {
-    font-family: "Lora"
-}
-
-
-
-/* VOLUNTEER FORM SECTION */
-            .volunteer-form,
-            .adoption-form {
-                background-color: #263238;
-                color: white;
-                padding: 40px;
-                margin-bottom: 25px;
-                margin-top: 20px;
-                border-radius: 10px;
-            }
-
-            .volunteer-top-section {
-                display: flex;
-                align-items: center;
-                gap: 50px;
-            }
-
-            .volunteer-image {
-                width: 40%;
-                max-width: 500px;
-                border-radius: 10px;
-            }
-
-            .volunteer-content {
-                flex: 1;
-            }
-
-            .volunteer-info-container{
-                display: flex;
-                gap: 50px;
-                align-items: flex-start;
-            }
-
-            .why-volunteer-box,
-            .ways-to-help-box{
-                flex:1;
-            }
-
-            .volunteer-form-button-container{
-                margin-top: 25px;
-            }
-
-            #volunteer-form {
-                background-color: #C66311;
-                color: white;
-                font-size: 18px;
-                padding: 10px 20px;
-            }
-
-            #volunteer-form:hover {
-                background-color: #632d04;
-            }
-
-            .volunteer-form-wrapper {
-                background-color: #F7F2E9;
-                color: #263238;
-                margin-top: 40px;
-                padding: 34px;
-                border-radius: 10px;
-            }
-
-    /* Tablet */
+/* Tablet */
 @media (max-width: 900px) {
-
     .cat-card-container,
     .menu-card-container,
     .event-card-container {
@@ -562,16 +398,30 @@ body {
     }
 
     .about-section,
+    .how-it-works-visit,
     .cat-details-section,
-    .volunteer-top-section {
+    .volunteer-top-section,
+    .sponsor-ad {
         flex-direction: column;
+    }
+
+    .about-image,
+    .book-a-visit-image,
+    .sponsor-image,
+    .volunteer-image,
+    .cat-details-image {
+        width: 100%;
+    }
+
+    .volunteer-info-container {
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
 
 /* Mobile */
 @media (max-width: 600px) {
-
     .cat-card-container,
     .menu-card-container,
     .event-card-container {
@@ -580,10 +430,23 @@ body {
 
     .menu-category-buttons,
     .event-category-buttons {
+        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .cat-details-section {
+        padding: 20px;
+    }
+
+    .personal-information-section {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section,
+    .how-it-works-visit,
+    .volunteer-form,
+    .adoption-form {
         padding: 20px;
     }
 }

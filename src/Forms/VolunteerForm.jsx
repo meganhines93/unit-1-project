@@ -335,6 +335,11 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
                         onChange={handleDataChange}
                         rows="5"
                     />
+
+                    <InputErrorMessage
+                        hasError={hasErrors && data.experience === ''}
+                        msg={errorMessages['experienceRequired']}
+                    />
                 </FormItem>
                 <p></p>
                 <FormItem classes="additional-information-item">

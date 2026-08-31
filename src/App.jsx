@@ -6,7 +6,6 @@ import Menu from './components/pages/CafeMenu'
 import Events from './components/pages/CafeEvents'
 import MeetTheCats from './components/pages/MeetTheCats'
 import CatDetails from './components/pages/CatDetails'
-import './App.css'
 import ErrorPage from './components/pages/ErrorPage';
 
 function App() {
