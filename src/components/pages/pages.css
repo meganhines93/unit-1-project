@@ -551,3 +551,39 @@ body {
                 padding: 34px;
                 border-radius: 10px;
             }
+
+    /* Tablet */
+@media (max-width: 900px) {
+
+    .cat-card-container,
+    .menu-card-container,
+    .event-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-section,
+    .cat-details-section,
+    .volunteer-top-section {
+        flex-direction: column;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .cat-card-container,
+    .menu-card-container,
+    .event-card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-category-buttons,
+    .event-category-buttons {
+        flex-wrap: wrap;
+    }
+
+    .cat-details-section {
+        padding: 20px;
+    }
+}

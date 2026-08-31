@@ -91,3 +91,25 @@
 .footer p {
     margin: 8px 0;
 }
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    .footer {
+        gap: 30px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+}

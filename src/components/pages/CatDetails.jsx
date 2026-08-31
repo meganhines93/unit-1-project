@@ -79,9 +79,9 @@ const CatDetails = ({ isLoading, catsError }) => {
                     {cat.name}
                 </h1>
 
-                <h3>
+                <pageXOffset>
                     Age: {cat.age} | Gender: {cat.gender}
-                </h3>
+                </p>
 
                 <h2>
                     ABOUT {cat.name}.
@@ -91,9 +91,9 @@ const CatDetails = ({ isLoading, catsError }) => {
                     {cat.description}
                 </p>
 
-                <h3>
+                <h2>
                     PERSONALITY
-                </h3>
+                </h2>
 
                 <div className="personality-container">
                     {cat.personality.map((trait) => (
@@ -103,9 +103,9 @@ const CatDetails = ({ isLoading, catsError }) => {
                     ))}
                 </div>
 
-                <h4>
+                <h2>
                     GOOD WITH
-                </h4>
+                </h2>
 
                 <div className="goodWith-container">
                     {cat.goodWith.map((goodWith) => (
@@ -115,15 +115,15 @@ const CatDetails = ({ isLoading, catsError }) => {
                     ))}
                 </div>
 
-                <h4>
+                <h2>
                     ADOPTION INFO
-                </h4>
+                </h2>
 
                 <p> {cat.adoptionInfo} </p>
 
-                <h3>
+                <p>
                     Adoption Fee: ${cat.adoptionFee}
-                </h3>
+                </p>
 
             </div>
 
