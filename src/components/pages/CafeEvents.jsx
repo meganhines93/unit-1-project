@@ -1,13 +1,11 @@
-import React from 'react';
 import { useNavigate } from "react-router";
-import Header from '../layout/Header.jsx';
-import Footer from '../layout/Footer.jsx';
 import GoBack from '../../common/GoBack.jsx';
 import EventCard from './Cards/EventCard.jsx';
 import { eventData } from '../mockData/eventData.js';
 import { useState } from "react";
+import ErrorPage from "./ErrorPage.jsx";
 
-const CafeEvents = ({ isLoading, eventsError }) => {
+const CafeEvents = ({ eventsError }) => {
 
 const navigate = useNavigate();
 
@@ -23,9 +21,7 @@ const handleGoToHomePage = () => {
         navigate('/');
     };
 
-    if (isLoading) {
-        return <LoadingPage dataName="events" />;
-    } else if (eventsError) {
+    if (eventsError) {
         return (
             <ErrorPage>
                 <p>{eventsError}</p>
@@ -33,14 +29,6 @@ const handleGoToHomePage = () => {
             </ErrorPage>
         );
     } else {
-        let eventsJSX = eventData.map((event) => {
-            return (
-                <li className="event-card-item" key={event.id}>
-                    <EventCard event={event} />
-                </li>
-            );
-        });
-
         return ( 
             <main className="events-page">
                 <h1 className="events-header">UPCOMING EVENTS</h1>
@@ -56,12 +44,12 @@ const handleGoToHomePage = () => {
                     <button onClick={() => setSelectedCategory("Seasonal")}>Seasonal</button>
                 </div>
                 {filteredEvent.length ? (
-                    <div className="event-card-container">
+                    <ul className="event-card-container">
                         {filteredEvent.map((event) => (
                             <li className="event-card-item" key={event.id}>
                                 <EventCard event={event} />
                             </li>
-                        ))}</div>
+                        ))}</ul>
                 ) : (
                     <p>
                         <em>We're sorry, there are no events to display at this time.</em>

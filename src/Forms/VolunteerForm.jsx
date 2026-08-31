@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import InputErrorMessage from './input/InputErrorMessage';
 import Button from './input/Button';
-import Spacer from '../common/Spacer';
 import FormItem from './input/FormItem';
 import Input from './input/Input';
 
@@ -86,8 +85,6 @@ const VolunteerForm = ({ handleCloseForm, setShowSuccess }) => {
         if (!isValid()) {
             setHasErrors(true);
         } else {
-            console.log(data);
-
             setData({ ...initialData });
             setHasErrors(false);
             setShowSuccess(true);

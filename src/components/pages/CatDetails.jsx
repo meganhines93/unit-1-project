@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate, useParams } from "react-router";
 import Spacer from '../../common/Spacer.jsx';
 import { catData } from '../mockData/catData';
@@ -7,7 +6,7 @@ import GoBack from '../../common/GoBack.jsx';
 import ErrorPage from './ErrorPage.jsx';
 
 
-const CatDetails = ({ isLoading, catsError }) => {
+const CatDetails = ({ catsError }) => {
     const { id } = useParams();
     const navigate = useNavigate();
 
@@ -19,11 +18,7 @@ const CatDetails = ({ isLoading, catsError }) => {
         navigate('/');
     };
 
-    if (isLoading) {
-        return <LoadingPage dataName="cats" />;
-    } 
-    
-    if (catsError) {
+   if (catsError) {
         return (
             <ErrorPage>
                 <p>{catsError}</p>
@@ -79,12 +74,12 @@ const CatDetails = ({ isLoading, catsError }) => {
                     {cat.name}
                 </h1>
 
-                <pageXOffset>
+                <p>
                     Age: {cat.age} | Gender: {cat.gender}
                 </p>
 
                 <h2>
-                    ABOUT {cat.name}.
+                    ABOUT {cat.name}
                 </h2>
 
                 <p>

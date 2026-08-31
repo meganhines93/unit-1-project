@@ -46,7 +46,7 @@ const errorMessages = {
     keepIndoorsRequired: 'Keep indoors is required.',
 };
 
-const AdoptionForm = ({ handleCloseForm }) => {
+const AdoptionForm = ({ handleCloseForm, setShowSuccess }) => {
     const [data, setData] = useState({ ...initialData });
     const [hasErrors, setHasErrors] = useState(false);
 
@@ -86,8 +86,6 @@ const AdoptionForm = ({ handleCloseForm }) => {
         if (!isValid()) {
             setHasErrors(true);
         } else {
-            console.log(data);
-
             setData({ ...initialData });
             setHasErrors(false);
             setShowSuccess(true);
@@ -99,7 +97,7 @@ const AdoptionForm = ({ handleCloseForm }) => {
             setTimeout(() => {
             setShowSuccess(false);
         }, 3000)
-        
+
         }
     };
 

@@ -1,11 +1,9 @@
 import { useState } from "react";
-import { Link } from "react-router";
 import Button from './../../forms/input/Button.jsx';
-import Spacer from '../../common/Spacer.jsx';
 import VolunteerForm from '../../forms/VolunteerForm.jsx'
 import { useNavigate } from "react-router";
  
-const HomePage = ({ home }) => {
+const HomePage = () => {
     const navigate = useNavigate();
 
     const [openForm, setOpenForm] = useState(false);
@@ -26,7 +24,7 @@ const HomePage = ({ home }) => {
 
     return(
             <main className='home-page'>
-
+                <h1>The Daily Purr Cat Cafe</h1>
 
                 <section className='about-section'>
                     <img

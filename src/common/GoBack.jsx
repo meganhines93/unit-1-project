@@ -3,7 +3,7 @@ import IconWithLabel from './IconWithLabel.jsx';
 const GoBack = ({ text, handleClick }) => {
     return (
         <button type="button" className="link-like-button" onClick={handleClick}>
-            <IconWithLabel id="go-back" classes="fa-solid fa-circle-arror-left">
+            <IconWithLabel id="go-back" classes="fa-solid fa-circle-arrow-left">
                 {text}
             </IconWithLabel>
         </button>

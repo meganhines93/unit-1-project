@@ -1,13 +1,4 @@
-import { useState } from "react";
-import Button from '../../../forms/input/Button.jsx';
-import Spacer from '../../../common/Spacer.jsx';
-
 const MenuCard = ({ menu }) => {
-    const [ openForm, setOpenForm ] = useState(false);
-    const handleToggleForm = () => {
-        setOpenForm(prevOpenForm => !prevOpenForm);
-    };
-
     return(
         <div className = "menu-card">
             <img

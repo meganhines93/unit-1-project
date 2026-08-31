@@ -1,36 +1,29 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import AdoptionForm from '../../Forms/AdoptionForm';
 import { catData } from '../mockData/catData';
 import CatCard from './Cards/CatCard';
-import { Link } from 'react-router';
 import Button from './../../forms/input/Button.jsx';
 import Spacer from '../../common/Spacer.jsx';
-import ErrorPage from "./ErrorPage.jsx";
 
-const MeetTheCats = ({ isLoading, catsError }) => {
+const MeetTheCats = ({ catsError }) => {
     const navigate = useNavigate();
 
     const [ openForm, setOpenForm ] = useState(false);
+    const [showSuccess, setShowSuccess] = useState(false);
 
     const handleToggleForm = () => {
         setOpenForm(prevOpenForm => !prevOpenForm);
     };
 
-    setTimeout(() => {
-        window.scrollTo(0, 0);
-    }, 0);
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
 
 
     const handleGoToHomePage = () => {
         navigate('/');
     };
-
-    
-
-    if (isLoading) {
-        return <p>Loading cats...</p>;
-    }
 
     if (catsError) {
         return (
@@ -73,7 +66,10 @@ const MeetTheCats = ({ isLoading, catsError }) => {
 
             <section>
                 {openForm ? (
-                    <AdoptionForm handleCloseForm={handleToggleForm} />
+                    <AdoptionForm 
+                        handleCloseForm={handleToggleForm} 
+                        setShowSuccess={setShowSuccess}
+                    />
                 ) : (
                     <div className="adoption-form-button-container">
                         <Button
@@ -85,6 +81,14 @@ const MeetTheCats = ({ isLoading, catsError }) => {
                         <Spacer marginY="20px" />
                     </div>
                 )}
+
+                {showSuccess && (
+                        <p className="success-message">
+                            Adoption request submitted successfully!
+                        </p>
+                    )} 
+
+                
             </section>
         </main>
     );

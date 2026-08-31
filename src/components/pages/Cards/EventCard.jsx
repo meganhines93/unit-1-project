@@ -23,7 +23,7 @@ const EventCard = ({ event }) => {
             <div className="event-card-content">
                 <h2 className="event-card-title">{event.title}</h2>
 
-                <h4 className="event-card-date-and-time">{event.date} {event.time}</h4>
+                <p className="event-card-date-and-time">{event.date} {event.time}</p>
 
                 <p>{event.description}</p>
 

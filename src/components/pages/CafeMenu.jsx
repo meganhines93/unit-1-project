@@ -1,14 +1,12 @@
-import React from 'react';
 import { useNavigate } from "react-router";
-import Header from '../layout/Header';
-import Footer from '../layout/Footer';
 import GoBack from '../../common/GoBack.jsx';
 import MenuCard from './Cards/MenuCard.jsx';
 import { menuData } from '../mockData/menuData.js';
 import { useState } from "react";
+import ErrorPage from "./ErrorPage.jsx";
 
 
-const CafeMenu = ({ isLoading, menuError }) => {
+const CafeMenu = ({ menuError }) => {
     const navigate = useNavigate();
 
     const [selectedCategory, setSelectedCategory] = useState("Espresso");
@@ -21,9 +19,7 @@ const CafeMenu = ({ isLoading, menuError }) => {
         navigate('/');
     };
 
-    if (isLoading) {
-        return <LoadingPage dataName="menu" />;
-    } else if (menuError) {
+    if (menuError) {
         return (
             <ErrorPage>
                 <p>{menuError}</p>
@@ -48,13 +44,13 @@ const CafeMenu = ({ isLoading, menuError }) => {
                 <h2 className="menu-title">{selectedCategory}</h2>
 
                 {filteredMenu.length ? (
-                    <div className="menu-card-container">
+                    <ul className="menu-card-container">
                         {filteredMenu.map((menu) => (
                             <li className="menu-card-item" key={menu.id}>
                                 <MenuCard menu={menu} />
                             </li>
                         ))}
-                    </div>
+                    </ul>
                 ) : (
                     <p>
                         <em>We're sorry, there are no {selectedCategory} items to display at this time.</em>
