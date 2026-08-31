@@ -1,5 +1,4 @@
-import React from 'react';
-import { Routes, Route, Link } from 'react-router';
+import { Routes, Route } from 'react-router';
 import Home from './components/pages/HomePage'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
@@ -20,6 +19,12 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/events" element={<Events />} />
           <Route path="/cats/:id" element={<CatDetails />} />
+          <Route path="*"
+            element={
+              <ErrorPage>
+                <p>Sorry, we couldn't find that page.</p>
+              </ErrorPage>
+            } />
       </Routes>
 
     <Footer />

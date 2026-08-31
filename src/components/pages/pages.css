@@ -28,7 +28,7 @@
 
 
             .about-content h2,
-            .visit-content h2,
+            .how-it-works-content h2,
             .sponsor-content h2,
             .volunteer-content h2
              {
@@ -43,8 +43,8 @@
             }
 
 
-/* BOOK A VISIT SECTION */
-            .book-a-visit {
+/* HOW IT WORKS SECTION */
+            .how-it-works-visit {
                 background-color: #263238;
                 color: white;
                 padding: 40px;
@@ -64,11 +64,33 @@
                 border-radius: 10px;
             }
 
-            .book-a-visit-content {
+            .how-it-works-content {
                 flex: 1;
+            }
+
+            .how-it-works-content h2 {
+                margin-top: 0;
+            }
+
+            .how-it-works-content h3 {
+                margin-top: 25px;
+                margin-bottom: 8px;
+            }
+
+            .how-it-works-content p {
+                margin-top: 0;
+                line-height: 1.4;
+            }
+
+
+            .how-it-works-section {
                 display: flex;
-                flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
+                gap: 60px;
+                background-color: #243239;
+                color: white;
+                padding: 40px;
+                border-radius: 10px;
             }
 
 
@@ -457,9 +479,7 @@
 button {
     background-color: #C66311;
     color: white;
-    border: none;
-    transition: background-color 0.3s ease;
-}
+    border: none;}
 button:hover {
     background-color: #632d04;
 }

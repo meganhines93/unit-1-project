@@ -52,21 +52,19 @@ const HomePage = ({ home }) => {
                 </section>
 
 
-                <section className='book-a-visit'>
-                    <div className="visit-content">
-                        <h2>Book a Visit</h2>
-                            <p>
-                                Ready for some quality cat time?
-                            </p>
-                            <p>
-                                Reserve your spot at The Daily Purr and spend an hour sipping, snuggling, and hanging out with our adoptable cats. Whether you're looking for your new best friend or just need a little extra purr in your day, we'd love to have you!
-                            </p>
-                            <p>
-                                Grab a drink. Meet the cats. Stay awhile.
-                            </p>
-                            <p>
-                                Book Your Visit
-                            </p>
+                <section className='how-it-works-visit'>
+                    <div className="how-it-works-content">
+                        <h2>How It Works</h2>
+                            <p>Visiting The Daily Purr is easy! Stop in for a drink, meet our adoptable cats, and stay as long as you'd like.</p>
+                            
+                            <h3>1. Grab a Drink</h3>
+                            <p>Choose from coffee, tea, breakfast, lunch or one of our cafe favorites</p>
+                            
+                            <h3>2. Meet the Cats</h3>
+                            <p>Spend some time getting to know our resident cats and their unique personalities</p>
+
+                            <h3>3. Fall in Love</h3>
+                            <p>Found your new best friend? Learn more about our adoption process and take the next step.</p>
                     </div>
                     <img
                     className="book-a-visit-image"
