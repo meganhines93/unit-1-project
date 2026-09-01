@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
-import AdoptionForm from '../../Forms/AdoptionForm';
+import AdoptionForm from '../../forms/AdoptionForm.jsx';
 import { catData } from '../mockData/catData';
 import CatCard from './Cards/CatCard';
-import Button from './../../forms/input/Button.jsx';
+import Button from '../../forms/input/Button.jsx';
 import Spacer from '../../common/Spacer.jsx';
 
 const MeetTheCats = ({ catsError }) => {
